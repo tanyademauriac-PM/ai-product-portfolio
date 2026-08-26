@@ -230,55 +230,96 @@ footer span { margin-top: 6px; color: var(--muted); font-size: 11px; letter-spac
 .case-study-card p { margin-bottom: 26px; color: var(--muted); font-size: 16px; line-height: 1.75; }
 .case-study-card .primary-action { width: fit-content; }
 .case-study-card + .case-study-card { margin-top: 18px; }
-.prisonology-card { border-top: 4px solid #f2bd66; }
-.prisonology-card .case-meta { color: #8b5464; }
-.prisonology-card .primary-action { background: #f2bd66; }
-.prisonology-card .primary-action:hover, .prisonology-card .primary-action:focus-visible { background: #df8b8f; }
+.legal-ai-card { border-top: 4px solid #f2bd66; }
+.legal-ai-card .case-meta { color: #8b5464; }
+.legal-ai-card .primary-action { background: #f2bd66; }
+.legal-ai-card .primary-action:hover, .legal-ai-card .primary-action:focus-visible { background: #df8b8f; }
 @media (max-width: 760px) {
   .portfolio-list { padding-top: 84px; padding-bottom: 84px; }
   .case-study-card { grid-template-columns: 1fr; gap: 30px; padding: 28px; }
 }
 
-/* Prisonology case study */
-.prisonology-page {
+/* Expert-reviewed legal AI case study */
+.legal-ai-page {
   --plum: #241826;
   --plum-soft: #38263b;
   --gold: #f2bd66;
   --rose: #df8b8f;
 }
-.prisonology-page .hero { background: var(--plum); }
-.prisonology-page .hero::after { border-color: rgba(242,189,102,.08); }
-.prisonology-page .hero-grid { background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px); background-size: 56px 56px; }
-.prisonology-page .status-dot { background: var(--gold); box-shadow: 0 0 0 5px rgba(242,189,102,.12); }
-.prisonology-page h1 span { color: var(--gold); }
-.prisonology-page .primary-action { background: var(--gold); }
-.prisonology-page .primary-action:hover, .prisonology-page .primary-action:focus-visible { background: var(--rose); }
-.prisonology-page .card-kicker, .prisonology-page .section-label.light { color: var(--gold); }
-.prisonology-page .thesis-card { border-color: rgba(242,189,102,.35); }
-.prisonology-page .thesis-card > p { font-size: 24px; line-height: 1.38; }
-.prisonology-page .overview { border-top: 4px solid var(--gold); }
-.prisonology-page .section-label { color: #8b5464; }
-.prisonology-page .section-label.light { color: var(--gold); }
-.prisonology-page .problem-statement span { color: #8b5464; }
+.legal-ai-page .hero { background: var(--plum); }
+.legal-ai-page .hero::after { border-color: rgba(242,189,102,.08); }
+.legal-ai-page .hero-grid { background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px); background-size: 56px 56px; }
+.legal-ai-page .status-dot { background: var(--gold); box-shadow: 0 0 0 5px rgba(242,189,102,.12); }
+.legal-ai-page h1 span { color: var(--gold); }
+.legal-ai-page .primary-action { background: var(--gold); }
+.legal-ai-page .primary-action:hover, .legal-ai-page .primary-action:focus-visible { background: var(--rose); }
+.legal-ai-page .card-kicker, .legal-ai-page .section-label.light { color: var(--gold); }
+.legal-ai-page .thesis-card { border-color: rgba(242,189,102,.35); }
+.legal-ai-page .thesis-card > p { font-size: 24px; line-height: 1.38; }
+.legal-ai-page .overview { border-top: 4px solid var(--gold); }
+.legal-ai-page .section-label { color: #8b5464; }
+.legal-ai-page .section-label.light { color: var(--gold); }
+.legal-ai-page .problem-statement span { color: #8b5464; }
+.legal-ai-page nav { gap: 22px; }
 
-.prisonology-system { padding: 128px 0; background: var(--plum-soft); color: var(--white); }
-.prisonology-flow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; margin-top: 68px; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.14); }
-.prisonology-flow article { min-height: 310px; padding: 28px 24px; background: var(--plum-soft); }
-.prisonology-flow article > span { color: var(--gold); font-family: monospace; font-size: 12px; }
-.prisonology-flow article small { display: block; margin-top: 54px; color: rgba(255,255,255,.45); font-size: 9px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-.prisonology-flow h3 { margin: 10px 0 16px; font-family: Georgia, "Times New Roman", serif; font-size: 23px; font-weight: 400; line-height: 1.2; }
-.prisonology-flow p { margin: 0; color: rgba(255,255,255,.6); font-size: 13px; line-height: 1.6; }
+.case-disclosure {
+  display: grid; grid-template-columns: 190px 1fr; gap: 36px; align-items: center;
+  padding: 22px 28px; border: 1px solid var(--line); border-top: 4px solid var(--rose); background: var(--white);
+}
+.case-disclosure strong { color: #8b5464; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+.case-disclosure p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
+.initiative { padding-top: 128px; padding-bottom: 128px; }
+.initiative-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; border: 1px solid var(--line); background: var(--line); }
+.initiative-grid article { min-height: 350px; padding: 34px; background: var(--white); }
+.initiative-grid article > span { color: #8b5464; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.initiative-grid h3 { margin: 78px 0 18px; font-family: Georgia, "Times New Roman", serif; font-size: 27px; font-weight: 400; line-height: 1.2; }
+.initiative-grid p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.initiative-grid .initiative-goal { background: var(--gold); }
+.initiative-grid .initiative-goal > span, .initiative-grid .initiative-goal p { color: rgba(36,24,38,.72); }
+.initiative .problem-statement { margin-top: 64px; }
 
-.prisonology-users, .prisonology-statuses, .prisonology-mvp { padding-top: 128px; padding-bottom: 128px; }
-.prisonology-role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-.prisonology-role-grid article { min-height: 300px; padding: 34px; border: 1px solid var(--line); background: var(--white); }
-.prisonology-role-grid article > span { color: #8b5464; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-.prisonology-role-grid h3 { margin: 72px 0 18px; font-family: Georgia, "Times New Roman", serif; font-size: 30px; font-weight: 400; }
-.prisonology-role-grid p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
-.prisonology-role-grid .expert-role { border-color: var(--gold); background: var(--gold); }
-.prisonology-role-grid .expert-role > span, .prisonology-role-grid .expert-role p { color: rgba(36,24,38,.72); }
+.legal-ai-system { padding: 128px 0; background: var(--plum-soft); color: var(--white); }
+.execution-flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin-top: 68px; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.14); }
+.execution-flow article { min-height: 240px; padding: 26px 24px; background: var(--plum-soft); }
+.execution-flow article > span { color: var(--gold); font-family: monospace; font-size: 11px; text-transform: uppercase; }
+.execution-flow h3 { margin: 60px 0 14px; font-family: Georgia, "Times New Roman", serif; font-size: 23px; font-weight: 400; line-height: 1.2; }
+.execution-flow p { margin: 0; color: rgba(255,255,255,.6); font-size: 13px; line-height: 1.6; }
+.execution-flow .decision-node { background: rgba(255,255,255,.09); border-top: 3px solid var(--rose); }
+.execution-flow .decision-node > span { color: var(--rose); }
+.execution-flow .release-node { background: var(--gold); color: var(--plum); }
+.execution-flow .release-node > span, .execution-flow .release-node p { color: rgba(36,24,38,.7); }
+.design-target { display: grid; grid-template-columns: 180px 1fr; gap: 36px; align-items: center; margin-top: 28px; padding: 26px 30px; border: 1px solid rgba(242,189,102,.35); }
+.design-target span { color: var(--gold); font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.design-target strong { font-family: Georgia, "Times New Roman", serif; font-size: 21px; font-weight: 400; line-height: 1.4; }
 
-.prisonology-expert { padding: 128px 0; background: var(--plum); color: var(--white); }
+.legal-ai-users, .legal-ai-statuses, .legal-ai-mvp, .customer-experience, .evidence-plan { padding-top: 128px; padding-bottom: 128px; }
+.legal-ai-role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.legal-ai-role-grid article { min-height: 300px; padding: 34px; border: 1px solid var(--line); background: var(--white); }
+.legal-ai-role-grid article > span { color: #8b5464; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.legal-ai-role-grid h3 { margin: 72px 0 18px; font-family: Georgia, "Times New Roman", serif; font-size: 30px; font-weight: 400; }
+.legal-ai-role-grid p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.legal-ai-role-grid .expert-role { border-color: var(--gold); background: var(--gold); }
+.legal-ai-role-grid .expert-role > span, .legal-ai-role-grid .expert-role p { color: rgba(36,24,38,.72); }
+
+.customer-experience { border-top: 1px solid var(--line); }
+.wireframe-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.wireframe-card { border: 1px solid var(--line); background: var(--white); }
+.wireframe-label { display: flex; justify-content: space-between; gap: 12px; padding: 16px 18px; border-bottom: 1px solid var(--line); }
+.wireframe-label span { color: #8b5464; font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.wireframe-label strong { font-size: 11px; }
+.wireframe-window { min-height: 330px; padding: 26px; background: #fbfaf6; }
+.wireframe-bar { width: 54%; height: 10px; margin-bottom: 66px; border-radius: 999px; background: var(--paper-deep); }
+.wireframe-window h3 { margin: 48px 0 12px; font-family: Georgia, "Times New Roman", serif; font-size: 25px; font-weight: 400; }
+.wireframe-window p { color: var(--muted); font-size: 13px; line-height: 1.6; }
+.wireframe-button { width: fit-content; margin-top: 26px; padding: 11px 15px; border-radius: 999px; background: var(--plum); color: var(--white); font-size: 10px; font-weight: 700; }
+.wireframe-steps { display: flex; gap: 6px; margin-bottom: 54px; }
+.wireframe-steps i { width: 40px; height: 4px; background: var(--paper-deep); }
+.wireframe-steps .active { background: var(--rose); }
+.wireframe-field { display: flex; justify-content: space-between; margin-top: 24px; padding: 14px; border: 1px solid var(--line); font-size: 10px; }
+.wireframe-field b { color: #58816f; }
+.wireframe-badge { width: fit-content; margin-bottom: 54px; padding: 8px 10px; background: rgba(242,189,102,.3); color: #705127; font-size: 9px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+
+.legal-ai-expert { padding: 128px 0; background: var(--plum); color: var(--white); }
 .expert-flow { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; gap: 24px; align-items: center; margin-top: 70px; }
 .expert-flow > .arrow-icon { width: 28px; color: var(--gold); }
 .expert-flow article { min-height: 260px; padding: 30px; border-top: 3px solid var(--rose); background: rgba(255,255,255,.06); }
@@ -295,6 +336,8 @@ footer span { margin-top: 6px; color: var(--muted); font-size: 11px; letter-spac
 .review-workspace strong { margin: 34px 0 9px; font-family: Georgia, "Times New Roman", serif; font-size: 20px; font-weight: 400; }
 .review-workspace span { color: rgba(255,255,255,.55); font-size: 11px; }
 .review-workspace .confidence-flag { color: var(--gold); }
+.workspace-note { margin-top: 36px; color: rgba(255,255,255,.45); font-size: 9px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.workspace-note + .review-workspace { margin-top: 12px; }
 
 .status-list { border-top: 1px solid var(--line); }
 .status-list > div { display: grid; grid-template-columns: 1fr 1.2fr 1.2fr; gap: 24px; align-items: center; min-height: 76px; padding: 18px 22px; border-bottom: 1px solid var(--line); background: rgba(255,255,255,.35); }
@@ -310,35 +353,56 @@ footer span { margin-top: 6px; color: var(--muted); font-size: 11px; letter-spac
 .mvp-grid h3 { margin: 92px 0 18px; font-family: Georgia, "Times New Roman", serif; font-size: 23px; font-weight: 400; line-height: 1.2; }
 .mvp-grid p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
 
-.prisonology-validation { padding: 112px 0; background: var(--plum-soft); color: var(--white); }
-.validation-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 100px; }
-.validation-grid h2 { margin: 30px 0 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(38px, 4vw, 58px); font-weight: 400; line-height: 1.08; letter-spacing: -.04em; }
-.validation-actions article { padding: 22px 0; border-top: 1px solid rgba(255,255,255,.14); }
+.roadmap-section { padding: 128px 0; background: var(--plum-soft); color: var(--white); }
+.roadmap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.14); }
+.roadmap-grid article { min-height: 380px; padding: 32px; background: var(--plum-soft); }
+.roadmap-grid article > span { color: var(--gold); font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.roadmap-grid h3 { margin: 70px 0 24px; font-family: Georgia, "Times New Roman", serif; font-size: 28px; font-weight: 400; line-height: 1.2; }
+.roadmap-grid ul { list-style: none; margin: 0; padding: 0; }
+.roadmap-grid li { padding: 11px 0; border-top: 1px solid rgba(255,255,255,.11); color: rgba(255,255,255,.62); font-size: 13px; line-height: 1.5; }
+.evidence-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.evidence-grid article { min-height: 350px; padding: 32px; border: 1px solid var(--line); background: var(--white); }
+.evidence-grid article > span { color: #8b5464; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.evidence-grid ul { list-style: none; margin: 50px 0 0; padding: 0; }
+.evidence-grid li { padding: 12px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; line-height: 1.55; }
+.evidence-grid li strong { color: var(--ink); }
+.evidence-plan .validation-actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 48px; }
+.validation-actions article { padding: 22px 0; border-top: 1px solid var(--line); }
 .validation-actions span { color: var(--gold); font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-.validation-actions p { margin: 10px 0 0; color: rgba(255,255,255,.64); font-size: 14px; line-height: 1.65; }
+.evidence-plan .validation-actions span { color: #8b5464; }
+.validation-actions p { margin: 10px 0 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
 .quality-guardrail { display: grid; grid-template-columns: 220px 1fr; gap: 46px; align-items: center; margin-top: 64px; padding: 30px 34px; background: var(--gold); color: var(--plum); }
 .quality-guardrail span { font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
 .quality-guardrail strong { font-family: Georgia, "Times New Roman", serif; font-size: 22px; font-weight: 400; line-height: 1.4; }
-.prisonology-takeaway { border-bottom: 1px solid var(--line); }
+.legal-ai-takeaway { border-bottom: 1px solid var(--line); }
 
 @media (max-width: 980px) {
-  .prisonology-flow { grid-template-columns: 1fr 1fr; }
-  .prisonology-role-grid { grid-template-columns: 1fr; }
-  .prisonology-role-grid article { min-height: auto; }
-  .prisonology-role-grid h3 { margin-top: 42px; }
+  .initiative-grid, .roadmap-grid { grid-template-columns: 1fr; }
+  .initiative-grid article, .roadmap-grid article { min-height: auto; }
+  .initiative-grid h3, .roadmap-grid h3 { margin-top: 42px; }
+  .execution-flow { grid-template-columns: 1fr 1fr; }
+  .legal-ai-role-grid { grid-template-columns: 1fr; }
+  .legal-ai-role-grid article { min-height: auto; }
+  .legal-ai-role-grid h3 { margin-top: 42px; }
   .expert-flow { grid-template-columns: 1fr; }
   .expert-flow > .arrow-icon { display: none; }
   .review-workspace { grid-template-columns: 1fr; }
   .review-workspace > div { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.12); }
   .mvp-grid { grid-template-columns: 1fr 1fr; }
-  .validation-grid { grid-template-columns: 1fr; gap: 50px; }
+  .wireframe-grid { grid-template-columns: 1fr; }
+  .wireframe-card { max-width: 620px; }
+  .evidence-plan .validation-actions { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 680px) {
-  .prisonology-system, .prisonology-users, .prisonology-expert, .prisonology-statuses, .prisonology-mvp { padding-top: 84px; padding-bottom: 84px; }
-  .prisonology-flow, .mvp-grid { grid-template-columns: 1fr; }
-  .prisonology-flow article, .mvp-grid article { min-height: auto; }
-  .prisonology-flow article small, .mvp-grid h3 { margin-top: 42px; }
+  .initiative, .legal-ai-system, .legal-ai-users, .legal-ai-expert, .legal-ai-statuses, .legal-ai-mvp, .customer-experience, .roadmap-section, .evidence-plan { padding-top: 84px; padding-bottom: 84px; }
+  .case-disclosure, .design-target { grid-template-columns: 1fr; gap: 12px; }
+  .execution-flow, .evidence-grid { grid-template-columns: 1fr; }
+  .execution-flow article { min-height: auto; }
+  .execution-flow h3 { margin-top: 42px; }
+  .mvp-grid { grid-template-columns: 1fr; }
+  .mvp-grid article { min-height: auto; }
+  .mvp-grid h3 { margin-top: 42px; }
   .status-list > div, .quality-guardrail { grid-template-columns: 1fr; gap: 9px; }
   .review-workspace > div { min-height: 130px; }
 }
