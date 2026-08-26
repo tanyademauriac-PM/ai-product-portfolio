@@ -210,7 +210,8 @@ footer span { margin-top: 6px; color: var(--muted); font-size: 11px; letter-spac
   .decision-grid h3 { margin-top: 55px; }
   .takeaway-mark { font-size: 88px; }
   footer { align-items: flex-start; flex-direction: column; }
-  footer > span { text-align: left; }
+  .footer-meta { align-items: flex-start; }
+  .footer-meta span { text-align: left; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
