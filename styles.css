@@ -165,7 +165,10 @@ footer { min-height: 130px; padding: 36px max(24px, calc((100vw - 1180px) / 2));
 footer strong, footer span { display: block; }
 footer strong { font-family: Georgia, "Times New Roman", serif; font-size: 18px; }
 footer span { margin-top: 6px; color: var(--muted); font-size: 11px; letter-spacing: .04em; }
-footer > span { margin: 0; text-align: right; text-transform: uppercase; letter-spacing: .12em; }
+.footer-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.footer-meta a { color: var(--ink); font-size: 12px; font-weight: 700; border-bottom: 1px solid currentColor; }
+.footer-meta a:hover, .footer-meta a:focus-visible { color: #58816f; }
+.footer-meta span { margin: 0; text-align: right; text-transform: uppercase; letter-spacing: .12em; }
 
 @media (max-width: 980px) {
   .hero { grid-template-columns: 1fr; gap: 50px; }
