@@ -1,85 +1,326 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Product Portfolio | Tanya deMauriac</title>
-  <meta name="description" content="Tanya deMauriac's AI product portfolio, with case studies on agentic workflows, product discovery, and product judgment.">
-  <link rel="icon" href="favicon.svg">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<main>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Back to top">
-      <span class="brand-mark">Td</span>
-      <span><strong>Tanya deMauriac</strong><small>AI Product Portfolio</small></span>
-    </a>
-    <nav aria-label="Portfolio navigation"><a href="#case-studies">Case studies</a></nav>
-  </header>
-
-  <section class="hero portfolio-hero" id="top">
-    <div class="hero-grid" aria-hidden="true"></div>
-    <div class="hero-copy">
-      <div class="eyebrow"><span class="status-dot"></span> AI Product Portfolio</div>
-      <h1>How I'm building and testing<span> AI product workflows.</span></h1>
-      <p class="hero-lede">These case studies show how I approach product discovery, agent design, testing, and product judgment. I explain what I built, the decisions I made, and what I changed based on the results.</p>
-      <div class="hero-actions">
-        <a class="primary-action" href="#case-studies">View the case studies
-          <svg viewBox="0 0 24 24" aria-hidden="true" class="arrow-icon"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Product Portfolio | Tanya deMauriac</title>
+    <meta
+      name="description"
+      content="Tanya deMauriac's product portfolio, with case studies in AI-native product management, zero-to-one strategy, enterprise SaaS, and agentic workflows."
+    />
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="home-page">
+    <main id="top">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Back to top">
+          <span class="brand-mark">Td</span>
+          <span
+            ><strong>Tanya deMauriac</strong
+            ><small>Product Portfolio</small></span
+          >
         </a>
-        <span class="scope-pill">Product discovery · Agent design · Testing</span>
-      </div>
-    </div>
+        <nav aria-label="Portfolio navigation">
+          <a href="#capabilities">Capabilities</a>
+          <a href="#case-studies">Case studies</a>
+          <a href="#leadership">Leadership</a>
+        </nav>
+      </header>
 
-    <aside class="thesis-card" aria-label="Portfolio case studies">
-      <div class="card-kicker">Portfolio case studies</div>
-      <p>Two AI product challenges</p>
-      <ol>
-        <li><span>01</span> Agentic Product Discovery Lab</li>
-        <li><span>02</span> Expert-Reviewed Legal AI Workflow</li>
-      </ol>
-    </aside>
-  </section>
+      <section class="home-hero" aria-labelledby="home-title">
+        <div class="home-intro">
+          <div class="numbered-label"><span>1.</span> Who I Am</div>
+          <p class="portfolio-kicker">AI-Native Senior Product Manager</p>
+          <h1 id="home-title">
+            I turn complex product problems into clear decisions, workable
+            systems, and products teams can deliver.
+          </h1>
+          <p class="home-lede">
+            My work spans enterprise SaaS, zero-to-one product strategy,
+            customer discovery, regulated workflows, and agentic product
+            experiences. These case studies show the reasoning behind the work,
+            including what I tested, what changed, and how I made the decisions.
+          </p>
+          <div
+            class="capability-row"
+            role="group"
+            aria-label="Primary capabilities"
+          >
+            <span>Product strategy</span><span>Enterprise SaaS</span
+            ><span>AI-native workflows</span>
+          </div>
+        </div>
 
-  <section class="portfolio-list section-shell" id="case-studies">
-    <div class="section-label">Case studies</div>
-    <div class="section-heading">
-      <h2>Case studies showing how I approached the work.</h2>
-      <p>Each case study explains the problem I explored, what I built, how I tested it, and what I learned.</p>
-    </div>
+        <aside class="case-index" aria-label="Portfolio case studies">
+          <div class="case-index-heading">
+            <span>Selected work</span><strong>Three case studies</strong>
+          </div>
+          <a href="agentic-product-discovery-lab/">
+            <span class="case-number">01</span>
+            <span
+              ><strong>Agentic Product Discovery Lab</strong
+              ><small>AI agent design and product judgment</small></span
+            >
+            <span class="case-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a href="expert-reviewed-legal-ai/">
+            <span class="case-number">02</span>
+            <span
+              ><strong>Expert-Reviewed Legal AI Workflow</strong
+              ><small>Zero-to-one product strategy</small></span
+            >
+            <span class="case-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a href="on-the-job-training/">
+            <span class="case-number">03</span>
+            <span
+              ><strong>On-the-Job Training Subscription Product</strong
+              ><small>Customer discovery and business case</small></span
+            >
+            <span class="case-arrow" aria-hidden="true">↗</span>
+          </a>
+        </aside>
+      </section>
 
-    <article class="case-study-card">
-      <div>
-        <div class="case-meta">01 · Agentic product discovery</div>
-        <h3>Agentic Product Discovery Lab</h3>
-      </div>
-      <div>
-        <p>I built and tested an AI product intake analyst in ClickUp using synthetic product data. The case study covers the decision model, test results, improvements, and guardrails.</p>
-        <a class="primary-action" href="agentic-product-discovery-lab/">Read the case study
-          <svg viewBox="0 0 24 24" aria-hidden="true" class="arrow-icon"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-        </a>
-      </div>
-    </article>
+      <section class="home-section capabilities-section" id="capabilities">
+        <div class="numbered-label">
+          <span>2.</span> What This Portfolio Demonstrates
+        </div>
+        <div class="home-section-heading">
+          <h2>The work is different. The product discipline is consistent.</h2>
+          <p>
+            Each case study shows how I connect customer evidence, product
+            judgment, business value, system behavior, and delivery decisions.
+          </p>
+        </div>
+        <div class="capability-family-grid">
+          <article class="family-strategy">
+            <span class="family-code">Strategy</span>
+            <h3>Product direction</h3>
+            <div class="capability-list">
+              <span>Product Strategy &amp; Vision</span
+              ><span>Roadmaps &amp; Portfolio Prioritization</span
+              ><span>Business Cases &amp; MVP Definition</span>
+            </div>
+          </article>
+          <article class="family-discovery">
+            <span class="family-code">Discovery</span>
+            <h3>Evidence and decisions</h3>
+            <div class="capability-list">
+              <span>Product Discovery &amp; Customer Research</span
+              ><span>Testing &amp; Validation</span
+              ><span>Product Judgment</span>
+            </div>
+          </article>
+          <article class="family-ai">
+            <span class="family-code">AI + Systems</span>
+            <h3>Workflows and execution</h3>
+            <div class="capability-list">
+              <span>AI-Native Product Management</span
+              ><span>Agentic Workflow Design</span
+              ><span>End-to-End Product Management</span>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <article class="case-study-card legal-ai-card">
-      <div>
-        <div class="case-meta">02 · Expert-reviewed AI workflow</div>
-        <h3>Expert-Reviewed Legal AI Workflow</h3>
-      </div>
-      <div>
-        <p>In an anonymized product strategy exercise, I designed a proposed digital service that connects PSR intake, checkout, AI drafting, expert analysis, secure delivery, and case history.</p>
-        <a class="primary-action" href="expert-reviewed-legal-ai/">Read the case study
-          <svg viewBox="0 0 24 24" aria-hidden="true" class="arrow-icon"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-        </a>
-      </div>
-    </article>
-  </section>
+      <section class="home-section case-studies-section" id="case-studies">
+        <div class="numbered-label"><span>3.</span> Case Studies</div>
+        <div class="home-section-heading">
+          <h2>
+            Real work, working prototypes, and product strategy exercises.
+          </h2>
+          <p>
+            Every case study identifies its context and uses only information
+            that is appropriate to share publicly.
+          </p>
+        </div>
 
-  <footer>
-    <div><strong>Tanya deMauriac</strong><span>AI-Native Product Manager · Enterprise SaaS · Agentic Workflows</span></div>
-    <div class="footer-meta"><a href="https://github.com/tanyademauriac-PM" target="_blank" rel="noopener noreferrer">GitHub Profile</a><span>AI Product Portfolio · 2026</span></div>
-  </footer>
-</main>
-</body>
+        <article class="portfolio-case">
+          <div class="portfolio-case-index">01</div>
+          <div class="portfolio-case-main">
+            <p class="case-type">Tested lab concept</p>
+            <h3>
+              <a href="agentic-product-discovery-lab/"
+                >Agentic Product Discovery Lab</a
+              >
+            </h3>
+            <p>
+              I built and tested an AI product intake analyst in ClickUp using
+              synthetic product data. The work covers the decision model, test
+              results, prompt and operating-model improvements, and automation
+              guardrails.
+            </p>
+            <div class="capability-row">
+              <span>Agentic Workflow Design</span
+              ><span>AI-Native Product Management</span
+              ><span>Product Discovery</span>
+            </div>
+          </div>
+          <a
+            class="case-link"
+            href="agentic-product-discovery-lab/"
+            aria-label="Read Agentic Product Discovery Lab"
+            >Read case study <span>↗</span></a
+          >
+        </article>
+
+        <article class="portfolio-case">
+          <div class="portfolio-case-index">02</div>
+          <div class="portfolio-case-main">
+            <p class="case-type">Anonymized product strategy exercise</p>
+            <h3>
+              <a href="expert-reviewed-legal-ai/"
+                >Expert-Reviewed Legal AI Workflow</a
+              >
+            </h3>
+            <p>
+              I designed a proposed digital service connecting customer intake,
+              checkout, AI drafting, expert verification, secure delivery, and
+              case history for a sensitive, high-stakes workflow.
+            </p>
+            <div class="capability-row">
+              <span>0-to-1 Product Strategy &amp; Launch</span
+              ><span>End-to-End Product Management</span
+              ><span>AI-Native Product Management</span>
+            </div>
+          </div>
+          <a
+            class="case-link"
+            href="expert-reviewed-legal-ai/"
+            aria-label="Read Expert-Reviewed Legal AI Workflow"
+            >Read case study <span>↗</span></a
+          >
+        </article>
+
+        <article class="portfolio-case">
+          <div class="portfolio-case-index">03</div>
+          <div class="portfolio-case-main">
+            <p class="case-type">Anonymized real product work</p>
+            <h3>
+              <a href="on-the-job-training/"
+                >On-the-Job Training Subscription Product</a
+              >
+            </h3>
+            <p>
+              I led discovery and product definition for a net-new On-the-Job
+              Training subscription product, using evidence from six customers
+              to shape the business case, MVP, executive decision, and
+              implementation plan.
+            </p>
+            <div class="capability-row">
+              <span>Business Cases &amp; MVP Definition</span
+              ><span>Customer Research</span><span>Enterprise SaaS</span>
+            </div>
+          </div>
+          <a
+            class="case-link"
+            href="on-the-job-training/"
+            aria-label="Read On-the-Job Training Subscription Product"
+            >Read case study <span>↗</span></a
+          >
+        </article>
+      </section>
+
+      <section class="home-section explore-section" id="explore">
+        <div class="numbered-label"><span>4.</span> Explore the Work</div>
+        <div class="explore-grid">
+          <div>
+            <h2>Choose the kind of product work you want to see.</h2>
+            <p>
+              The case studies are designed to work independently. You can start
+              with the product capability that is most relevant to the role or
+              conversation.
+            </p>
+          </div>
+          <div class="explore-links">
+            <a href="agentic-product-discovery-lab/"
+              ><span>Agent design, testing, and guardrails</span
+              ><strong>Agentic Product Discovery Lab</strong></a
+            >
+            <a href="expert-reviewed-legal-ai/"
+              ><span>Workflow strategy, MVP, and human review</span
+              ><strong>Expert-Reviewed Legal AI Workflow</strong></a
+            >
+            <a href="on-the-job-training/"
+              ><span>Discovery, business case, and launch planning</span
+              ><strong>On-the-Job Training Subscription Product</strong></a
+            >
+            <a
+              href="https://github.com/tanyademauriac-PM"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span>Source and additional work</span
+              ><strong>GitHub Profile</strong></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="home-section leadership-section" id="leadership">
+        <div class="numbered-label">
+          <span>5.</span> Additional Product Leadership
+        </div>
+        <div class="home-section-heading">
+          <h2>
+            The case studies sit inside a broader enterprise product practice.
+          </h2>
+          <p>
+            I lead strategy and execution for complex SaaS products while
+            staying close to customer evidence, delivery detail, and the
+            decisions teams need to move forward.
+          </p>
+        </div>
+        <div class="leadership-grid">
+          <article>
+            <span>Enterprise product leadership</span
+            ><strong
+              >Flagship regulated SaaS strategy and delivery across three sprint
+              teams</strong
+            >
+          </article>
+          <article>
+            <span>Customer discovery</span
+            ><strong
+              >Advisory panels, targeted research, workflow analysis, and
+              post-release learning</strong
+            >
+          </article>
+          <article>
+            <span>Delivery depth</span
+            ><strong
+              >PRDs, business rules, process flows, epics, validation, and
+              implementation readiness</strong
+            >
+          </article>
+          <article>
+            <span>AI-native practice</span
+            ><strong
+              >Agentic workflows, custom AI skills, and evidence-led product
+              analysis</strong
+            >
+          </article>
+        </div>
+      </section>
+
+      <footer>
+        <div>
+          <strong>Tanya deMauriac</strong
+          ><span
+            >AI-Native Product Manager · Enterprise SaaS · Agentic
+            Workflows</span
+          >
+        </div>
+        <div class="footer-meta">
+          <a
+            href="https://github.com/tanyademauriac-PM"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub Profile</a
+          ><span>Product Portfolio · 2026</span>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
