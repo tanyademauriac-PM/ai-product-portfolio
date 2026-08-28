@@ -1,6 +1,6 @@
-# AI Product Portfolio
+# Product Portfolio
 
-This repository contains my AI product portfolio and the source files for its GitHub Pages site.
+A growing collection of case studies showing my work across AI product design, product discovery, enterprise SaaS, mobile products, complex workflows, and product strategy. Each case study goes deeper into the problem, product decisions, research, and work behind the solution.
 
 ## Case studies
 
