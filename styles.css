@@ -3532,14 +3532,14 @@ footer {
   padding-bottom: 118px;
 }
 .mobile-tint {
-  background: var(--paper-deep);
+  background: var(--paper);
 }
 .mobile-field-section {
   background: var(--paper);
   color: var(--ink);
 }
 .mobile-offline-section {
-  background: var(--paper-deep);
+  background: var(--paper);
   color: var(--ink);
 }
 .mobile-outcome {
