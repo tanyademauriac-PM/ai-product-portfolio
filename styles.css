@@ -3546,6 +3546,30 @@ footer {
   background: var(--white);
   color: var(--ink);
 }
+.mobile-page .mobile-section {
+  background: var(--mobile-section-bg);
+}
+.mobile-page .mobile-section.section-shell {
+  box-shadow: 0 0 0 100vmax var(--mobile-section-bg);
+  clip-path: inset(0 -100vmax);
+}
+.mobile-page #context,
+.mobile-page #research,
+.mobile-page #offline,
+.mobile-page #outcome {
+  --mobile-section-bg: var(--paper);
+}
+.mobile-page #opportunity,
+.mobile-page #scope,
+.mobile-page #team,
+.mobile-page #looking-back {
+  --mobile-section-bg: var(--white);
+}
+.mobile-page #investment,
+.mobile-page #design,
+.mobile-page #launch {
+  --mobile-section-bg: var(--paper-deep);
+}
 .mobile-field-section .section-label.light,
 .mobile-offline-section .section-label.light,
 .mobile-outcome .section-label.light {
