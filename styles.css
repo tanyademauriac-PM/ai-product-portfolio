@@ -3534,14 +3534,22 @@ footer {
 .mobile-tint {
   background: var(--paper-deep);
 }
-.mobile-field-section,
+.mobile-field-section {
+  background: var(--paper);
+  color: var(--ink);
+}
 .mobile-offline-section {
-  background: var(--forest-light);
-  color: var(--white);
+  background: var(--paper-deep);
+  color: var(--ink);
 }
 .mobile-outcome {
-  background: var(--moss);
-  color: var(--white);
+  background: var(--paper);
+  color: var(--ink);
+}
+.mobile-field-section .section-label.light,
+.mobile-offline-section .section-label.light,
+.mobile-outcome .section-label.light {
+  color: var(--moss-deep);
 }
 .mobile-prose {
   max-width: 900px;
@@ -3580,16 +3588,16 @@ footer {
 }
 .mobile-prose.light-copy p,
 .mobile-prose.light-copy li {
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
 }
 .mobile-prose.light-copy strong {
-  color: var(--white);
+  color: var(--ink-soft);
 }
 .mobile-prose.light-copy blockquote {
   margin: 34px 0 42px;
   padding: 30px 0 30px 34px;
-  border-left: 4px solid var(--moss-light);
-  color: var(--white);
+  border-left: 4px solid var(--moss);
+  color: var(--ink);
 }
 .mobile-opening-line {
   margin-bottom: 38px !important;
@@ -3628,29 +3636,29 @@ footer {
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
-.workflow-comparison {
+.mobile-workflow-visual .workflow-comparison {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
-.workflow-comparison > article {
+.mobile-workflow-visual .workflow-comparison > article {
   padding: 30px;
   border: 1px solid var(--line);
   border-top: 5px solid var(--clay);
   background: var(--white);
 }
-.workflow-comparison > .mobile-enabled-flow {
+.mobile-workflow-visual .workflow-comparison > .mobile-enabled-flow {
   border-top-color: var(--moss);
 }
 .mobile-enabled-flow .visual-kicker {
   color: var(--moss-deep);
 }
-.workflow-comparison ol {
+.mobile-workflow-visual .workflow-comparison ol {
   list-style: none;
   margin: 30px 0 0;
   padding: 0;
 }
-.workflow-comparison li {
+.mobile-workflow-visual .workflow-comparison li {
   display: grid;
   grid-template-columns: 34px 1fr;
   gap: 14px;
@@ -3660,7 +3668,7 @@ footer {
   border-top: 1px solid var(--line);
   position: relative;
 }
-.workflow-comparison li + li::before {
+.mobile-workflow-visual .workflow-comparison li + li::before {
   content: "↓";
   position: absolute;
   top: -9px;
@@ -3670,12 +3678,12 @@ footer {
   color: var(--moss);
   font-size: 12px;
 }
-.workflow-comparison li span {
+.mobile-workflow-visual .workflow-comparison li span {
   color: var(--moss-deep);
   font-family: monospace;
   font-size: 10px;
 }
-.workflow-comparison li strong {
+.mobile-workflow-visual .workflow-comparison li strong {
   color: var(--ink-soft);
   font-size: 13px;
   line-height: 1.45;
@@ -3732,7 +3740,7 @@ footer {
   text-align: center;
 }
 .mobile-offline-section .mobile-visual figcaption {
-  color: var(--moss-light);
+  color: var(--moss-deep);
 }
 .offline-flow {
   display: grid;
@@ -3742,8 +3750,8 @@ footer {
 .offline-flow article {
   min-height: 160px;
   padding: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--line);
+  background: var(--white);
   position: relative;
 }
 .offline-flow article + article::before {
@@ -3766,7 +3774,7 @@ footer {
   display: block;
 }
 .offline-flow span {
-  color: var(--moss-light);
+  color: var(--moss-deep);
   font-family: monospace;
   font-size: 10px;
 }
@@ -3804,8 +3812,8 @@ footer {
   padding: 34px;
 }
 .mobile-result-card {
-  border: 1px solid rgba(255, 255, 255, 0.34);
-  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--line);
+  background: var(--white);
 }
 .mobile-result-card span,
 .ai-connection-card > span {
@@ -3816,7 +3824,7 @@ footer {
   text-transform: uppercase;
 }
 .mobile-result-card span {
-  color: rgba(255, 255, 255, 0.64);
+  color: var(--moss-deep);
 }
 .mobile-result-card strong,
 .ai-connection-card > strong {
@@ -3829,7 +3837,7 @@ footer {
 }
 .mobile-result-card p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
   font-size: 14px;
   line-height: 1.7;
 }
@@ -3893,7 +3901,7 @@ footer {
   .mobile-prose li {
     font-size: 15px;
   }
-  .workflow-comparison,
+  .mobile-workflow-visual .workflow-comparison,
   .scope-decision-grid,
   .offline-flow {
     grid-template-columns: 1fr;
@@ -3913,7 +3921,7 @@ footer {
 }
 
 @media (max-width: 520px) {
-  .workflow-comparison > article,
+  .mobile-workflow-visual .workflow-comparison > article,
   .scope-decision-grid article,
   .mobile-result-card,
   .ai-connection-card {
