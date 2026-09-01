@@ -9,6 +9,7 @@ A growing collection of case studies showing my work across AI product design, p
 - [0→1 Enterprise SaaS Product](https://tanyademauriac-pm.github.io/ai-product-portfolio/on-the-job-training/): How I used customer discovery to develop the business case, define an implementation-ready MVP, and plan a controlled limited launch.
 - [Regulated SaaS Compliance Controls](https://tanyademauriac-pm.github.io/ai-product-portfolio/regulated-saas-compliance-controls/): How I led an urgent compliance response while preserving a durable, configurable product solution.
 - [0→1 Mobile Product Launch](https://tanyademauriac-pm.github.io/ai-product-portfolio/zero-to-one-mobile-product/): How I recognized the mobile shift early, conducted field research, designed for offline use, and led a new mobile product through launch.
+- [Prioritizing Competing Initiatives Across Shared Sprint Teams](https://tanyademauriac-pm.github.io/ai-product-portfolio/shared-sprint-team-prioritization/): How I used customer evidence, scope discipline, backlog leadership, and shared-capacity planning to deliver two competing initiatives across two planning cycles.
 
 All product data shown in the Agentic Product Discovery Lab is synthetic and was created solely for that experiment.
 
