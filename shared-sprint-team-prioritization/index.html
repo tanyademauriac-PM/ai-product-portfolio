@@ -6,10 +6,10 @@
     <title>Prioritizing Competing Initiatives Across Shared Sprint Teams | Tanya deMauriac</title>
     <meta
       name="description"
-      content="An anonymized product-management case study about using customer evidence, scope discipline, backlog leadership, and shared-capacity planning to deliver two competing enterprise SaaS initiatives."
+      content="An anonymized enterprise SaaS case study about discovery, product prioritization, backlog leadership, and delivery across constrained shared sprint-team capacity."
     />
     <link rel="icon" href="../favicon.svg" />
-    <link rel="stylesheet" href="../styles.css?v=shared-priority-case-2" />
+    <link rel="stylesheet" href="../styles.css?v=shared-priority-case-3" />
   </head>
   <body class="case-page priority-page">
     <main id="top">
@@ -35,14 +35,12 @@
           <div class="eyebrow">
             <span class="status-dot"></span> Case Study 06 · Anonymized real product work
           </div>
-          <p class="hero-capability">
-            Cross-Initiative Product Prioritization
-          </p>
+          <p class="hero-capability">Cross-Initiative Product Prioritization</p>
           <h1>Prioritizing Competing Initiatives Across Shared Sprint Teams</h1>
           <p class="hero-lede">
-            I used customer evidence, scope discipline, and shared-capacity
-            planning to protect a validated MVP after the true size of a second
-            initiative changed the delivery plan.
+            How I revised a delivery plan when discovery revealed that two
+            legitimate initiatives could no longer fit within the same planning
+            cycle.
           </p>
           <div
             class="capability-row capability-row-light"
@@ -66,13 +64,13 @@
         <aside class="thesis-card" aria-label="Case study overview">
           <div class="card-kicker">The product decision</div>
           <p>
-            Protect Fieldstone's validated MVP and use remaining capacity to
-            keep Relay moving.
+            Protect the validated customer-facing MVP while keeping the internal
+            workflow initiative moving wherever capacity allowed.
           </p>
           <ol>
-            <li><span>01</span> Make the capacity mismatch visible</li>
-            <li><span>02</span> Agree on one primary initiative</li>
-            <li><span>03</span> Turn that decision into sprint sequencing</li>
+            <li><span>01</span> Make the new scope visible</li>
+            <li><span>02</span> Set an evidence-based priority</li>
+            <li><span>03</span> Sequence both initiatives around real capacity</li>
           </ol>
         </aside>
       </section>
@@ -113,29 +111,51 @@
           <p>
             The product organization had multiple sprint teams to assign work
             to, but much of the available engineering capacity was already
-            committed to other necessary work. Multiple product leaders also
-            shared sprint-team capacity. Two initiatives could be competing for
-            time on the same team even though each had a different product
-            owner.
+            committed to other necessary work. The sprint teams were shared
+            across product leadership, so two initiatives could compete for time
+            on the same sprint team even when they were led by different product
+            leaders.
           </p>
           <p>
-            I owned Project Fieldstone, a significant customer-facing workflow
-            capability. Another product leader owned Project Relay, an internal
-            workflow-automation initiative that would also establish useful
-            product and platform capability. Both were legitimate priorities,
-            and both were planned against the same sprint team.
+            I owned <strong>New Customer Capability (Project NCC)</strong>, a
+            net-new customer-facing workflow designed to bring a fragmented,
+            largely manual customer process into the enterprise platform.
+            Another product leader owned <strong>Internal Workflow Automation
+            (Project IWA)</strong>, an enhancement designed to automate an
+            existing recurring internal administrative workflow.
           </p>
+        </div>
+
+        <figure class="shared-team-model priority-visual">
+          <figcaption>How the shared-capacity model worked</figcaption>
+          <div class="shared-team-flow">
+            <article>
+              <span>Product Leader A</span>
+              <strong>Project NCC</strong>
+            </article>
+            <div class="flow-arrow" aria-hidden="true">→</div>
+            <div class="shared-team-node">
+              <span>Shared capacity</span>
+              <strong>Shared Sprint Team</strong>
+            </div>
+            <div class="flow-arrow" aria-hidden="true">←</div>
+            <article>
+              <span>Product Leader B</span>
+              <strong>Project IWA</strong>
+            </article>
+          </div>
+          <p>One sprint team · Two legitimate initiatives · Finite delivery capacity</p>
+        </figure>
+
+        <div class="priority-prose initiative-intro">
           <p>
-            Initial high-level assumptions suggested Relay would require a
-            handful of stories. Detailed discovery by the Product Owner revealed
-            substantially more complexity. Relay grew to nearly 20 user stories.
-            The original expectation that both initiatives could be completed in
-            one planning cycle no longer matched the backlog.
-          </p>
-          <p>
-            I recognized the mismatch before the plan failed through execution.
-            There was no large pool of available engineering capacity elsewhere,
-            so the next decision had to be about priority and sequencing.
+            Both were planned against the same sprint team. Initial high-level
+            assumptions suggested that Project IWA would require only a handful
+            of stories. Detailed discovery and story decomposition revealed
+            significantly more complexity, expanding the work to nearly 20 user
+            stories. The original expectation that both initiatives would fit
+            within one planning cycle no longer matched the backlog or the
+            team's capacity.
           </p>
         </div>
 
@@ -145,20 +165,20 @@
             <article>
               <div class="visual-kicker">Initial assumption</div>
               <div class="initiative-pair">
-                <span>Project Fieldstone</span>
-                <span>Project Relay</span>
+                <span>Project NCC</span>
+                <span>Project IWA</span>
               </div>
               <strong>Expected to fit within one planning cycle</strong>
-              <p>Relay was still understood as a relatively small effort.</p>
+              <p>Project IWA was still understood as a relatively small effort.</p>
             </article>
             <article class="collision-reality">
               <div class="visual-kicker">After detailed discovery</div>
               <div class="initiative-pair">
-                <span>Project Fieldstone</span>
-                <span>Project Relay · Nearly 20 stories</span>
+                <span>Project NCC</span>
+                <span>Project IWA · Nearly 20 stories</span>
               </div>
               <strong>Available sprint-team capacity was exceeded</strong>
-              <p>The backlog showed that the original one-cycle plan could not hold.</p>
+              <p>The actual backlog showed that the one-cycle plan could not hold.</p>
             </article>
           </div>
         </figure>
@@ -166,222 +186,175 @@
 
       <section class="priority-section priority-tint" id="evidence">
         <div class="section-shell">
-          <div class="section-label">02 · Why Fieldstone Was the Priority</div>
+          <div class="section-label">02 · Why Project NCC Came First</div>
           <div class="priority-prose">
-            <h2>Fieldstone entered delivery with a validated problem and a controlled MVP.</h2>
+            <h2>The priority followed the evidence and delivery readiness.</h2>
             <p>
-              Before development began, I had completed substantial product work
-              on Fieldstone. I conducted direct discovery with several large
-              customers, used advisory-panel and roundtable discussions to test
-              the problem, defined the MVP, developed the business case, secured
-              approval, and translated the plan into detailed requirements and
-              stories.
+              Before delivery, I had conducted direct discovery with several
+              large customers and used customer advisory-panel and roundtable
+              discussions to validate the workflow problem. I defined the MVP,
+              developed the business case, secured higher-leadership approval,
+              and completed detailed requirements and story planning.
             </p>
             <p>
-              That upstream work made the delivery plan more reliable. Normal
-              engineering complexity still surfaced, but Fieldstone's scope
-              remained substantially stable. The initiative did not multiply in
-              size once development started because the problem, MVP boundary,
-              and detailed requirements were already well understood.
-            </p>
-            <p>
-              Fieldstone also addressed a validated customer need, had already
-              begun implementation, and had an approved business case. I
-              recommended protecting its MVP once capacity became constrained.
-              The other product leader agreed with that priority based on the
-              evidence. Relay remained important and would continue wherever
-              capacity allowed.
+              Normal engineering complexity still surfaced, but Project NCC's
+              core MVP boundary remained substantially stable. The work completed
+              upstream significantly reduced scope uncertainty going into
+              delivery. Project NCC also addressed the stronger customer and
+              product need relative to Project IWA's newly understood cost, and
+              implementation had already begun. The other product leader agreed
+              with prioritizing Project NCC.
             </p>
           </div>
 
-          <div class="priority-evidence-grid" role="list" aria-label="Evidence supporting the priority decision">
-            <article role="listitem">
-              <span>Customer evidence</span>
-              <strong>Direct discovery with several large customers</strong>
-            </article>
-            <article role="listitem">
-              <span>Advisory input</span>
-              <strong>Roundtables reinforced the workflow problem</strong>
-            </article>
-            <article role="listitem">
-              <span>Product definition</span>
-              <strong>A deliberately defined and approved MVP</strong>
-            </article>
-            <article role="listitem">
-              <span>Delivery readiness</span>
-              <strong>Business case, requirements, and story planning complete</strong>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="priority-section section-shell" id="tradeoff">
-        <div class="section-label">03 · Making the Tradeoff</div>
-        <div class="priority-prose">
-          <h2>I brought the actual backlog into the decision.</h2>
-          <p>
-            I raised the capacity risk with higher leadership early. I showed the
-            current backlog, Relay's newly understood scope, Fieldstone's
-            remaining MVP work, and the delivery constraints affecting the
-            shared sprint team. The other product leader was part of the
-            discussion, and we aligned on Fieldstone as the primary initiative.
-          </p>
-          <p>
-            At this point, I owned the broader Product Backlog and product-level
-            prioritization. The Product Owner owned the sprint team's Sprint
-            Backlog. I kept that ownership clear and worked closely with her so
-            the sprint-level sequence reflected the agreed product decision.
-          </p>
-        </div>
-
-        <div class="ownership-grid" aria-label="Backlog ownership and collaboration">
-          <article>
-            <span>My ownership</span>
-            <h3>Product Backlog</h3>
-            <p>
-              Product-level priority, MVP protection, tradeoffs, and alignment
-              across competing work.
-            </p>
-          </article>
-          <article>
-            <span>Product Owner ownership</span>
-            <h3>Sprint Backlog</h3>
-            <p>
-              Sprint-level planning and sequencing, supported by the agreed
-              product priorities and ongoing collaboration.
-            </p>
-          </article>
-        </div>
-
-        <aside class="working-rule" aria-label="Working prioritization rule">
-          <span>Working rule</span>
-          <strong>
-            Fieldstone first. Relay used remaining capacity when Fieldstone work
-            was dependency-blocked or when available engineering skills allowed
-            both initiatives to advance concurrently.
-          </strong>
-        </aside>
-
-        <div class="priority-prose decision-questions">
-          <h3>New work required an explicit tradeoff.</h3>
-          <p>
-            I used practical, contextual judgment for the requests competing
-            with the plan. I considered whether a customer was blocked, whether
-            there was regulatory exposure, how severe the issue was, whether it
-            was required for Fieldstone, whether another sprint team was better
-            positioned to handle it, and what would happen if it waited until
-            the next planning period.
-          </p>
-          <p>
-            A small request could still enter the plan when it was genuinely
-            urgent, severe, or safe to move elsewhere with limited knowledge
-            transfer. Every addition had to make the cost to committed work
-            visible.
-          </p>
-        </div>
-      </section>
-
-      <section class="priority-section execution-section" id="execution">
-        <div class="section-shell">
-          <div class="section-label">04 · Turning the Decision Into Execution</div>
-          <div class="priority-prose">
-            <h2>The priority had to remain visible in the sprint plans.</h2>
-            <p>
-              I worked directly with the Product Owner through the full planned
-              backlog. Together we put Fieldstone first, moved unrelated
-              nice-to-haves and noncritical defects back to the broader backlog,
-              and protected the MVP from accumulating unplanned work.
-            </p>
-            <p>
-              I also worked closely with the Engineering Lead to understand
-              dependencies and the engineering skills each story required. We
-              identified work that could run concurrently, checked whether large
-              stories needed further breakdown, and sequenced foundational work
-              before dependent stories.
-            </p>
-            <p>
-              I stayed close to the sprint plans across both planning cycles and
-              participated as product leadership in the team's planning sessions.
-              That helped keep the agreed priority intact as PTO, review needs,
-              dependencies, validation, and normal rework changed the available
-              capacity. A small number of genuinely urgent items moved to another
-              sprint team when the transfer was safe and the knowledge burden was
-              limited.
-            </p>
-          </div>
-
-          <figure class="delivery-plan priority-visual">
-            <figcaption>The revised sequencing approach</figcaption>
-            <div class="delivery-plan-grid">
+          <figure class="readiness-comparison priority-visual">
+            <figcaption>What was known when the initiatives entered planning</figcaption>
+            <div class="readiness-grid">
               <article>
-                <span>01</span>
-                <strong>Fieldstone MVP work stays first</strong>
-                <p>Foundational and dependent work is sequenced deliberately.</p>
+                <span class="readiness-label">Project NCC</span>
+                <h3>Customer-facing capability</h3>
+                <ul>
+                  <li>Direct customer discovery</li>
+                  <li>Advisory-panel and roundtable input</li>
+                  <li>Customer problem validated</li>
+                  <li>MVP deliberately defined</li>
+                  <li>Business case approved</li>
+                  <li>Detailed planning completed</li>
+                  <li>Scope remained substantially stable</li>
+                </ul>
               </article>
               <article>
-                <span>02</span>
-                <strong>Relay advances in usable capacity</strong>
-                <p>Dependency gaps and engineering skill differences create safe concurrency.</p>
-              </article>
-              <article>
-                <span>03</span>
-                <strong>Lower-priority work moves out</strong>
-                <p>Nice-to-haves and noncritical defects return to the broader backlog.</p>
-              </article>
-              <article>
-                <span>04</span>
-                <strong>Both initiatives span two cycles</strong>
-                <p>The sprint plans reflect real capacity and explicit product priorities.</p>
+                <span class="readiness-label">Project IWA</span>
+                <h3>Internal workflow enhancement</h3>
+                <ul>
+                  <li>Valid internal workflow need</li>
+                  <li>Initial high-level scope</li>
+                  <li>Expected to be a small enhancement</li>
+                  <li>Detailed discovery followed</li>
+                  <li>Discovery revealed nearly 20 stories</li>
+                  <li>New information changed the capacity assumption</li>
+                </ul>
               </article>
             </div>
           </figure>
+        </div>
+      </section>
 
-          <aside class="capacity-reality">
-            <span>Usable capacity reflected real team constraints</span>
-            <ul>
-              <li>Shared UX and principal engineering capacity</li>
-              <li>Engineering review and development-lead bandwidth</li>
-              <li>PTO, dependencies, and engineering skill differences</li>
-              <li>Normal rework and validation</li>
-            </ul>
+      <section class="priority-section execution-section" id="plan">
+        <div class="section-shell">
+          <div class="section-label">03 · Reworking the Plan</div>
+          <div class="priority-prose">
+            <h2>I turned the priority decision into a workable sequence.</h2>
+            <p>
+              I raised the capacity risk with higher leadership early. I brought
+              the actual backlog, Project IWA's newly understood scope, Project
+              NCC's remaining work, dependencies, and real sprint-team capacity
+              into the discussion. We agreed on the working rule: Project NCC
+              first. Project IWA would continue when Project NCC was blocked by
+              a dependency, the available engineering skill set allowed both to
+              progress, or capacity remained after Project NCC work was covered.
+            </p>
+            <p>
+              I owned the broader Product Backlog and product-level
+              prioritization, while the Product Owner owned the Sprint Backlog.
+              We worked through the planned work together so sprint-level
+              sequencing reflected the product priorities and capacity decisions
+              I was accountable for.
+            </p>
+            <p>
+              I moved unrelated nice-to-haves and noncritical defects back to
+              the broader backlog and protected the Project NCC MVP from
+              accumulating unplanned work. Truly urgent work could still enter
+              when customer blockage, regulatory exposure, severity, or a direct
+              dependency justified displacing planned work. A small number of
+              urgent items moved to another sprint team when limited knowledge
+              transfer made that safe.
+            </p>
+            <p>
+              With the Engineering Lead, I mapped dependencies, identified work
+              that could run concurrently, checked whether large stories needed
+              further breakdown, and sequenced foundational work before dependent
+              work. I participated in planning sessions and stayed close to the
+              sprint plans across both cycles. Available capacity also reflected
+              normal delivery constraints, including shared specialists,
+              dependencies, engineering review, and team availability.
+            </p>
+          </div>
+
+          <aside class="working-rule" aria-label="Working prioritization rule">
+            <span>Working rule</span>
+            <strong>
+              Project NCC first. Project IWA continued when dependencies,
+              engineering skills, or remaining capacity made concurrent progress
+              possible.
+            </strong>
           </aside>
+
+          <figure class="sequencing-swimlane priority-visual">
+            <figcaption>The revised two-cycle delivery plan</figcaption>
+            <div class="swimlane" role="table" aria-label="Two-cycle initiative sequencing">
+              <div class="swimlane-corner" role="columnheader">Workstream</div>
+              <div class="swimlane-header" role="columnheader">Planning Cycle 1</div>
+              <div class="swimlane-header" role="columnheader">Planning Cycle 2</div>
+              <div class="swimlane-header" role="columnheader">Result</div>
+
+              <div class="swimlane-label" role="rowheader">
+                <strong>Project NCC</strong><span>Protected priority</span>
+              </div>
+              <div class="swimlane-cell swimlane-primary" role="cell">Primary MVP work</div>
+              <div class="swimlane-cell swimlane-primary" role="cell">Remaining MVP work</div>
+              <div class="swimlane-result" role="cell">Completed MVP</div>
+
+              <div class="swimlane-label" role="rowheader">
+                <strong>Project IWA</strong><span>Continued where capacity allowed</span>
+              </div>
+              <div class="swimlane-cell swimlane-secondary" role="cell">Dependency gaps and usable skill capacity</div>
+              <div class="swimlane-cell swimlane-secondary" role="cell">Continued implementation</div>
+              <div class="swimlane-result" role="cell">Completed</div>
+
+              <div class="swimlane-label" role="rowheader">
+                <strong>Other work</strong><span>Explicit tradeoffs</span>
+              </div>
+              <div class="swimlane-cell swimlane-deferred" role="cell">Noncritical work deferred</div>
+              <div class="swimlane-cell swimlane-deferred" role="cell">Urgent exceptions redirected when feasible</div>
+              <div class="swimlane-result" role="cell">Plan protected</div>
+            </div>
+          </figure>
         </div>
       </section>
 
       <section class="priority-section outcome-section" id="outcome">
         <div class="section-shell outcome-layout">
           <div class="priority-prose">
-            <div class="section-label">05 · Outcome</div>
-            <h2>The one-cycle assumption became a defensible two-cycle plan.</h2>
+            <div class="section-label">04 · Outcome</div>
+            <h2>The one-cycle assumption became a realistic two-cycle plan.</h2>
             <p>
-              The capacity mismatch was recognized early, before the team was
-              left to discover it through missed work. The priority decision was
-              explicit, the Sprint Backlog reflected it, and unrelated work was
-              deferred.
+              The revised plan protected Project NCC's complete MVP without
+              abandoning Project IWA. Lower-priority work moved out, and both
+              initiatives progressed around actual dependencies and engineering
+              capacity.
             </p>
             <p>
-              Fieldstone and Relay both advanced through deliberate sequencing
-              around dependencies and available engineering skills. Both major
-              initiatives were completed by the end of the second planning
-              cycle.
+              Both initiatives reached implementation completion by the end of
+              the second planning cycle.
             </p>
           </div>
           <div class="outcome-cards" aria-label="Case study outcomes">
             <article>
-              <span>Early signal</span>
-              <strong>Capacity risk surfaced before execution failed</strong>
+              <span>Protected scope</span>
+              <strong>Project NCC's complete MVP stayed intact</strong>
             </article>
             <article>
-              <span>Clear priority</span>
-              <strong>Fieldstone's MVP stayed protected in the Sprint Backlog</strong>
+              <span>Continued progress</span>
+              <strong>Project IWA remained active in usable capacity</strong>
             </article>
             <article>
               <span>Realistic plan</span>
               <strong>Two planning cycles replaced the one-cycle assumption</strong>
             </article>
             <article>
-              <span>Delivery</span>
-              <strong>Both major initiatives were completed</strong>
+              <span>Implementation</span>
+              <strong>Both major initiatives reached completion</strong>
             </article>
           </div>
         </div>
@@ -390,38 +363,24 @@
       <section class="priority-section takeaway-section" id="takeaway">
         <div class="section-shell takeaway-layout">
           <div>
-            <div class="section-label">06 · Product Leadership Takeaway</div>
-            <h2>Strong discovery improves planning reliability.</h2>
+            <div class="section-label">05 · What I Carried Forward</div>
+            <h2>Strong discovery improves downstream planning reliability.</h2>
             <p>
-              Fieldstone's scope stayed controlled because substantial customer
-              discovery, validation, MVP definition, business-case development,
-              and detailed planning happened before delivery. That preparation
-              gave us a reliable basis for the priority decision when capacity
-              tightened.
-            </p>
-            <p>
-              I carried several practices forward from this cycle. I involve
-              engineering earlier when size or dependencies are uncertain,
-              challenge assumptions that work will be small, preserve meaningful
-              buffer in later sprints, and require an explicit tradeoff when new
-              work needs to enter a full plan.
-            </p>
-            <p>
-              I also stay closer to execution on strategically important work
-              while preserving the Product Owner's sprint-level ownership.
-              Shared capacity requires ongoing product judgment. A priority only
-              protects the outcome when it continues to shape the backlog and
-              sprint plans.
+              I validate uncertain scope earlier and involve engineering sooner
+              when sizing or dependencies are unclear. I preserve meaningful
+              buffer for normal delivery variance and require an explicit
+              tradeoff when new work enters a full plan. Strong discovery gives
+              the team a more reliable starting point, while normal engineering
+              uncertainty still needs active planning.
             </p>
           </div>
           <aside class="carry-forward-card">
-            <span>What I carried forward</span>
+            <span>Practices I kept</span>
             <ul>
               <li>Validate scope earlier</li>
-              <li>Bring engineering into uncertain sizing sooner</li>
-              <li>Protect committed work from accumulated small requests</li>
-              <li>Keep buffer for dependencies and normal delivery variance</li>
-              <li>Make the tradeoff explicit when priorities change</li>
+              <li>Involve engineering sooner</li>
+              <li>Preserve meaningful delivery buffer</li>
+              <li>Make new tradeoffs explicit</li>
             </ul>
           </aside>
         </div>
