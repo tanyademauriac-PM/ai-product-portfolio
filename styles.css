@@ -4000,7 +4000,7 @@ footer {
 }
 .priority-hero .hero-capability {
   margin: 25px 0 0;
-  color: var(--clay);
+  color: #84533e;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.15em;
@@ -4021,12 +4021,12 @@ footer {
   background: var(--moss-light);
 }
 .priority-hero .primary-action {
-  background: var(--moss);
+  background: var(--moss-deep);
   color: var(--white);
 }
 .priority-hero .primary-action:hover,
 .priority-hero .primary-action:focus-visible {
-  background: var(--moss-deep);
+  background: var(--forest);
 }
 .priority-hero .thesis-card {
   border-color: rgba(91, 145, 87, 0.34);
@@ -4117,10 +4117,10 @@ footer {
   border-top-color: var(--clay);
 }
 .collision-grid .visual-kicker {
-  color: var(--ochre);
+  color: #755f2e;
 }
 .collision-grid .collision-reality .visual-kicker {
-  color: var(--clay);
+  color: #84533e;
 }
 .initiative-pair {
   display: grid;
