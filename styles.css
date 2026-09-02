@@ -4509,8 +4509,13 @@ footer {
 .outcome-layout .priority-prose {
   margin-top: 0;
 }
-.outcome-layout .section-label {
+.outcome-layout .section-label,
+.outcome-compact .section-label {
   margin-bottom: 34px;
+}
+.outcome-compact .priority-prose {
+  max-width: 900px;
+  margin-top: 0;
 }
 .outcome-cards {
   display: grid;
