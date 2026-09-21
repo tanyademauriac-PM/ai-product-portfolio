@@ -5519,7 +5519,7 @@ footer {
 .high-growth-hero h1 {
   max-width: 860px;
   margin: 0 0 24px;
-  font-size: clamp(44px, 4.6vw, 64px);
+  font-size: clamp(38px, 4vw, 56px);
 }
 .high-growth-section {
   padding-top: 112px;
