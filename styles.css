@@ -5804,3 +5804,22 @@ footer {
   grid-column: 1 / -1;
   width: 100%;
 }
+
+
+/* Homepage leadership full-width cards */
+.home-page #leadership .leadership-grid.leadership-patterns {
+  grid-template-columns: 1fr;
+  gap: 8px;
+  border: 0;
+}
+
+.home-page #leadership .leadership-grid.leadership-patterns > article {
+  min-height: 0;
+  padding: 24px 28px;
+  border: 1px solid var(--line);
+}
+
+.home-page #leadership .leadership-grid.leadership-patterns > article:last-child {
+  grid-column: auto;
+  width: auto;
+}
