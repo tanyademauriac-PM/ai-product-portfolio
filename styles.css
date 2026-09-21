@@ -5774,15 +5774,17 @@ footer {
 
 /* Homepage hero refinement */
 .home-page .home-hero h1 {
-  font-size: clamp(30px, 3vw, 42px);
+  max-width: 820px;
+  font-size: clamp(27px, 2.7vw, 38px);
   font-weight: 300;
-  line-height: 1.08;
-  letter-spacing: -0.025em;
+  line-height: 1.16;
+  letter-spacing: -0.012em;
   color: var(--ink-soft);
 }
 
 @media (max-width: 760px) {
   .home-page .home-hero h1 {
-    font-size: 30px;
+    font-size: 27px;
+    line-height: 1.18;
   }
 }
