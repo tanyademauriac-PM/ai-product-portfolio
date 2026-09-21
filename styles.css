@@ -187,7 +187,7 @@ nav a:focus-visible {
 .home-hero h1 {
   margin-bottom: 28px;
   font-family: var(--serif);
-  font-size: clamp(48px, 5.2vw, 76px);
+  font-size: clamp(38px, 4vw, 56px);
   font-weight: 400;
   line-height: 0.99;
   letter-spacing: -0.045em;
@@ -294,7 +294,7 @@ nav a:focus-visible {
 .outcome-grid h2 {
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(38px, 4.4vw, 60px);
+  font-size: clamp(30px, 3.2vw, 44px);
   font-weight: 400;
   line-height: 1.04;
   letter-spacing: -0.04em;
@@ -560,7 +560,7 @@ nav a:focus-visible {
   max-width: 840px;
   margin: 31px 0 27px;
   font-family: var(--serif);
-  font-size: clamp(54px, 6vw, 88px);
+  font-size: clamp(38px, 4vw, 56px);
   font-weight: 400;
   line-height: 0.96;
   letter-spacing: -0.052em;
@@ -730,7 +730,7 @@ nav a:focus-visible {
 .takeaway h2 {
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(38px, 4.4vw, 60px);
+  font-size: clamp(30px, 3.2vw, 44px);
   font-weight: 400;
   line-height: 1.04;
   letter-spacing: -0.04em;
@@ -2092,7 +2092,7 @@ footer span {
     padding: 126px 20px 72px;
   }
   .hero h1 {
-    font-size: 49px;
+    font-size: 38px;
   }
   .hero-lede {
     font-size: 15px;
@@ -2694,7 +2694,7 @@ footer {
 .ojt-prose h2 {
   margin: 0 0 28px;
   font-family: var(--serif);
-  font-size: clamp(36px, 4vw, 54px);
+  font-size: clamp(30px, 3.2vw, 44px);
   font-weight: 400;
   letter-spacing: -0.035em;
   line-height: 1.08;
@@ -2902,7 +2902,7 @@ footer {
   border-left: 1px solid var(--line);
 }
 .ojt-two-column .ojt-prose h2 {
-  font-size: clamp(31px, 3.2vw, 45px);
+  font-size: clamp(30px, 3.2vw, 44px);
 }
 .mvp-workflow {
   display: grid;
@@ -3221,7 +3221,7 @@ footer {
 .regulated-close h2 {
   margin: 0 0 28px;
   font-family: var(--serif);
-  font-size: clamp(36px, 4vw, 54px);
+  font-size: clamp(30px, 3.2vw, 44px);
   font-weight: 400;
   letter-spacing: -0.035em;
   line-height: 1.08;
@@ -3582,7 +3582,7 @@ footer {
 .mobile-prose h2 {
   margin-bottom: 38px;
   font-family: var(--serif);
-  font-size: clamp(38px, 4.4vw, 60px);
+  font-size: clamp(30px, 3.2vw, 44px);
   font-weight: 400;
   line-height: 1.04;
   letter-spacing: -0.04em;
@@ -4008,7 +4008,7 @@ footer {
 }
 .priority-hero h1 {
   max-width: 900px;
-  font-size: clamp(52px, 5.7vw, 82px);
+  font-size: clamp(38px, 4vw, 56px);
 }
 .priority-hero .hero-lede {
   color: var(--muted);
@@ -4067,7 +4067,7 @@ footer {
 .takeaway-layout h2 {
   margin-bottom: 38px;
   font-family: var(--serif);
-  font-size: clamp(38px, 4.4vw, 60px);
+  font-size: clamp(30px, 3.2vw, 44px);
   font-weight: 400;
   line-height: 1.04;
   letter-spacing: -0.04em;
@@ -4677,7 +4677,7 @@ footer {
 .inflection-close h2 {
   margin: 0 0 30px;
   font-family: var(--serif);
-  font-size: clamp(38px, 4.4vw, 60px);
+  font-size: clamp(30px, 3.2vw, 44px);
   font-weight: 400;
   line-height: 1.04;
   letter-spacing: -0.04em;
@@ -5041,7 +5041,7 @@ footer {
 .inflection-v2 .inflection-hero-v2 h1 {
   max-width: 850px;
   margin: 0 0 24px;
-  font-size: clamp(50px, 5.6vw, 82px);
+  font-size: clamp(38px, 4vw, 56px);
 }
 .inflection-v2 .orientation-card > p {
   font-size: 25px;
@@ -5063,7 +5063,7 @@ footer {
 .inflection-v2-close h2 {
   margin: 0 0 30px;
   font-family: var(--serif);
-  font-size: clamp(38px, 4.4vw, 60px);
+  font-size: clamp(30px, 3.2vw, 44px);
   font-weight: 400;
   line-height: 1.04;
   letter-spacing: -0.04em;
@@ -5736,5 +5736,37 @@ footer {
   }
   .high-growth-close-grid {
     gap: 24px;
+  }
+}
+
+
+/* Portfolio-wide title scale standard */
+.case-page .hero h1,
+.home-page .home-hero h1 {
+  font-size: clamp(38px, 4vw, 56px);
+}
+
+.case-page .section-heading h2,
+.case-page .guardrails h2,
+.case-page .takeaway h2,
+.case-page .ojt-prose h2,
+.case-page .regulated-prose h2,
+.case-page .regulated-close h2,
+.case-page .mobile-prose h2,
+.case-page .priority-prose h2,
+.case-page .takeaway-layout h2,
+.case-page .inflection-prose h2,
+.case-page .inflection-close h2,
+.case-page .inflection-v2-prose h2,
+.case-page .inflection-v2-close h2,
+.case-page .high-growth-prose h2,
+.case-page .high-growth-close h2 {
+  font-size: clamp(30px, 3.2vw, 44px);
+}
+
+@media (max-width: 760px) {
+  .case-page .hero h1,
+  .home-page .home-hero h1 {
+    font-size: 38px;
   }
 }
