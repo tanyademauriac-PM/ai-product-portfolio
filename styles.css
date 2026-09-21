@@ -5797,3 +5797,10 @@ footer {
     line-height: 1.18;
   }
 }
+
+
+/* Homepage leadership full-width final card */
+.home-page #leadership .leadership-grid.leadership-patterns > article:last-child {
+  grid-column: 1 / -1;
+  width: 100%;
+}
