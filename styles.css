@@ -493,6 +493,15 @@ nav a:focus-visible {
   line-height: 1.35;
 }
 
+.leadership-patterns article:last-child {
+  grid-column: 1 / -1;
+  min-height: 170px;
+}
+
+.leadership-patterns article:last-child strong {
+  max-width: 900px;
+}
+
 /* Shared case-study system */
 .hero {
   min-height: 760px;
