@@ -5519,7 +5519,7 @@ footer {
 .high-growth-hero h1 {
   max-width: 860px;
   margin: 0 0 24px;
-  font-size: clamp(52px, 5.8vw, 84px);
+  font-size: clamp(44px, 4.6vw, 64px);
 }
 .high-growth-section {
   padding-top: 112px;
@@ -5537,10 +5537,10 @@ footer {
 .high-growth-close h2 {
   margin: 0 0 30px;
   font-family: var(--serif);
-  font-size: clamp(38px, 4.4vw, 60px);
+  font-size: clamp(30px, 3.2vw, 44px);
   font-weight: 400;
-  line-height: 1.04;
-  letter-spacing: -0.04em;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
 }
 .high-growth-prose p,
 .high-growth-close p {
