@@ -5823,3 +5823,10 @@ footer {
   grid-column: auto;
   width: auto;
 }
+
+
+/* Homepage leadership full-width text */
+.home-page #leadership .leadership-grid.leadership-patterns > article strong {
+  max-width: none;
+  width: 100%;
+}
