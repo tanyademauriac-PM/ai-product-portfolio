@@ -6,7 +6,7 @@
     <title>0→1 Enterprise SaaS Product | Tanya deMauriac</title>
     <meta
       name="description"
-      content="An anonymized case study about customer discovery, business-case development, MVP strategy, product vision, and limited-launch planning for a new enterprise SaaS product."
+      content="An anonymized 0→1 enterprise SaaS case study about customer discovery, scalable product-model design, product boundaries, business-case development, MVP strategy, and limited-launch planning."
     />
     <link rel="icon" href="../favicon.svg" />
     <link rel="stylesheet" href="../styles.css?v=title-scale-1" />
@@ -43,9 +43,10 @@
           <p class="hero-lede">
             Identified and validated an opportunity to bring a highly manual
             on-the-job training workflow into a regulated enterprise
-            qualification platform. Led six-customer discovery, developed the
-            product and commercial case, defined an implementation-ready MVP and
-            future product strategy, secured approval, and designed a controlled
+            qualification platform. Led six-customer discovery, shaped a
+            scalable product model and boundary, developed the product and
+            commercial case, defined an implementation-ready MVP and future
+            product strategy, secured approval, and designed a controlled
             limited-launch plan.
           </p>
           <div
@@ -73,8 +74,8 @@
           <p>Standardize the workflow. Configure the policy.</p>
           <ol>
             <li><span>01</span> Validate the opportunity with six customers</li>
-            <li><span>02</span> Define a complete, configurable MVP</li>
-            <li><span>03</span> Plan the path toward a future subscription</li>
+            <li><span>02</span> Separate the common core from true policy variation</li>
+            <li><span>03</span> Define the product boundary, MVP, and growth path</li>
           </ol>
         </aside>
       </section>
@@ -343,67 +344,210 @@
       </section>
 
       <section class="ojt-section ojt-tint" id="domain">
-        <div class="section-shell ojt-two-column">
-          <article>
-            <div class="section-label">
-              04 · Developing Domain Understanding
+        <div class="section-shell">
+          <div class="section-label">04 · Developing Domain Understanding</div>
+          <div class="ojt-prose">
+            <h2>Discovery expanded my understanding of the product space.</h2>
+            <p>
+              The discovery process surfaced an important domain insight.
+              Formal training and qualification were only part of how these
+              employees learned. For hands-on field work, supervised practice
+              was a critical part of skill development.
+            </p>
+            <p>
+              I expanded the research beyond our customers to understand
+              established OJT models, industries where structured OJT and
+              apprenticeship are common, how these programs have evolved,
+              specialized apprenticeship and training platforms, and where a
+              focused OJT capability naturally belonged within an enterprise
+              qualification product.
+            </p>
+            <p>
+              That research helped define both the immediate product and the
+              longer-term product boundary.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ojt-section section-shell" id="product-model">
+        <div class="section-label">05 · Choosing the Product Model</div>
+        <div class="ojt-prose">
+          <h2>
+            The strategic choice was between consistency, customization, and
+            configurability.
+          </h2>
+          <p>
+            The six customers validated the same underlying need, but they did
+            not implement OJT in exactly the same way. That created a product
+            strategy question beyond whether we should build the capability:
+            how much of the workflow should be standardized, and where should
+            the product intentionally allow variation?
+          </p>
+          <p>
+            Modeling one customer's process would have been faster, but it
+            risked hard-coding one organization's operating model into a product
+            intended for many enterprises. Making every workflow highly
+            customizable could accommodate more variation, but it would create
+            greater complexity in implementation, user experience, support,
+            testing, and future product evolution.
+          </p>
+          <p>
+            I chose a standardized core with intentional configuration. The
+            common OJT lifecycle would stay consistent across customers, while
+            legitimate policy, audit, and operating differences could be
+            represented through company-level settings.
+          </p>
+          <blockquote class="ojt-decision">
+            Customer variation became a product requirement when it represented
+            a legitimate difference in policy, audit practice, or operating
+            model — not simply because one customer happened to do the work
+            differently.
+          </blockquote>
+        </div>
+
+        <figure class="ojt-visual decision-visual">
+          <figcaption>Product-model options → Strategic choice</figcaption>
+          <div
+            class="decision-table"
+            role="table"
+            aria-label="Product-model options and tradeoffs"
+          >
+            <div class="decision-head" role="row">
+              <strong role="columnheader">Possible direction</strong>
+              <strong role="columnheader">Strategic implication</strong>
             </div>
-            <div class="ojt-prose">
-              <h2>Discovery expanded my understanding of the product space.</h2>
-              <p>
-                The discovery process surfaced an important domain insight.
-                Formal training and qualification were only part of how these
-                employees learned. For hands-on field work, supervised practice
-                was a critical part of skill development.
-              </p>
-              <p>
-                I expanded the research beyond our customers to understand
-                established OJT models, industries where structured OJT and
-                apprenticeship are common, how these programs have evolved,
-                specialized apprenticeship and training platforms, and where a
-                focused OJT capability naturally belonged within an enterprise
-                qualification product.
-              </p>
-              <p>
-                That research helped define both the immediate product and the
-                longer-term product boundary.
-              </p>
+            <div role="row">
+              <span role="cell">Model one customer's workflow</span>
+              <span role="cell">
+                Faster initially, but too likely to encode one company's process
+                into a multi-customer product.
+              </span>
             </div>
-          </article>
-          <article>
-            <div class="section-label">05 · Commercial Product Opportunity</div>
-            <div class="ojt-prose">
-              <h2>The opportunity had a credible commercial path.</h2>
-              <p>
-                Customers were already paying for enterprise training and
-                qualification software. The same workforce participating in
-                qualification programs also needed supervised, hands-on
-                learning. At least one major customer was already paying
-                separately for a specialized platform supporting part of that
-                workflow.
-              </p>
-              <p>
-                I recommended placing OJT behind its own subscription
-                entitlement and permission structure from the beginning.
-              </p>
-              <p>
-                That gave us controlled access during early validation and
-                created a clear path toward future monetization as the product
-                matured.
-              </p>
-              <p>
-                Formal pricing would be established later through the
-                appropriate commercial leadership process. My responsibility was
-                to establish that the customer value, product fit, usage
-                potential, and commercial logic justified further investment.
-              </p>
+            <div role="row">
+              <span role="cell">Make each workflow highly customizable</span>
+              <span role="cell">
+                Flexible, but costly to implement, support, test, and evolve as
+                a coherent SaaS product.
+              </span>
             </div>
-          </article>
+            <div role="row">
+              <span role="cell">
+                Standardized core + intentional configuration
+              </span>
+              <span role="cell">
+                Preserve one scalable product model while accommodating
+                meaningful company-policy and audit differences.
+              </span>
+            </div>
+          </div>
+        </figure>
+      </section>
+
+      <section class="ojt-section ojt-tint" id="product-boundary">
+        <div class="section-shell">
+          <div class="section-label">06 · Drawing the Product Boundary</div>
+          <div class="ojt-prose">
+            <h2>
+              OJT was the opportunity. A full apprenticeship platform was not
+              the first product.
+            </h2>
+            <p>
+              Discovery also exposed how easily the opportunity could expand.
+              One customer was already paying for a separate apprenticeship
+              platform, and the broader market included adjacent capabilities
+              such as richer activity tracking, scheduling, reporting,
+              administration, complex signoff models, and workflow automation.
+            </p>
+            <p>
+              Those capabilities were relevant, but trying to solve the entire
+              category at once would have changed the size of the investment,
+              the implementation complexity, the validation cycle, and the
+              product's position within the existing training and qualification
+              ecosystem.
+            </p>
+            <p>
+              I defined a focused OJT product first: own the supervised
+              competency workflow that naturally extended the platform, create a
+              path to deepen that value over time, and avoid turning the initial
+              investment into a full apprenticeship-management product.
+            </p>
+          </div>
+
+          <figure class="ojt-visual decision-visual">
+            <figcaption>Define the product boundary</figcaption>
+            <div
+              class="decision-table"
+              role="table"
+              aria-label="Immediate product, future expansion, and product boundary"
+            >
+              <div class="decision-head" role="row">
+                <strong role="columnheader">Boundary</strong>
+                <strong role="columnheader">Product direction</strong>
+              </div>
+              <div role="row">
+                <span role="cell">Own now</span>
+                <span role="cell">
+                  A complete OJT workflow integrated with the existing training
+                  and qualification ecosystem.
+                </span>
+              </div>
+              <div role="row">
+                <span role="cell">Expand over time</span>
+                <span role="cell">
+                  Richer activity capture, signoff models, reporting,
+                  scheduling, administration, lifecycle management, and
+                  automation.
+                </span>
+              </div>
+              <div role="row">
+                <span role="cell">Not the first product</span>
+                <span role="cell">
+                  A broad apprenticeship-management platform attempting to
+                  recreate every adjacent capability available elsewhere.
+                </span>
+              </div>
+            </div>
+          </figure>
+
+          <p class="measurement-note">
+            The goal was not to recreate every adjacent capability customers
+            could buy elsewhere. It was to identify the part of the workflow our
+            platform was best positioned to own.
+          </p>
+        </div>
+      </section>
+
+      <section class="ojt-section section-shell" id="commercial">
+        <div class="section-label">07 · Commercial Product Opportunity</div>
+        <div class="ojt-prose">
+          <h2>The opportunity had a credible commercial path.</h2>
+          <p>
+            Customers were already paying for enterprise training and
+            qualification software. The same workforce participating in
+            qualification programs also needed supervised, hands-on learning. At
+            least one major customer was already paying separately for a
+            specialized platform supporting part of that workflow.
+          </p>
+          <p>
+            I recommended placing OJT behind its own subscription entitlement
+            and permission structure from the beginning.
+          </p>
+          <p>
+            That gave us controlled access during early validation and created a
+            clear path toward future monetization as the product matured.
+          </p>
+          <p>
+            Formal pricing would be established later through the appropriate
+            commercial leadership process. My responsibility was to establish
+            that the customer value, product fit, usage potential, and
+            commercial logic justified further investment.
+          </p>
         </div>
       </section>
 
       <section class="ojt-section section-shell" id="mvp">
-        <div class="section-label">06 · Defining the MVP</div>
+        <div class="section-label">08 · Defining the MVP</div>
         <div class="ojt-prose">
           <h2>
             The MVP provided a complete usable OJT workflow and a way to learn
@@ -420,6 +564,17 @@
           <p>
             The MVP delivered the smallest complete workflow required to test
             the product hypothesis.
+          </p>
+          <blockquote class="ojt-decision">
+            The MVP boundary was strategic, not simply smaller.
+          </blockquote>
+          <p>
+            I did not define MVP by taking the future product and arbitrarily
+            removing features. I identified the smallest end-to-end workflow
+            that could test the product model in real operating conditions:
+            could customers create meaningful OJT objectives, connect learners
+            with qualified mentors, complete supervised competency signoff, and
+            capture the supporting evidence their company policy required?
           </p>
         </div>
 
@@ -481,60 +636,52 @@
 
       <section class="ojt-section ojt-tint" id="vision">
         <div class="section-shell">
-          <div class="section-label">07 · Planning Beyond the MVP</div>
+          <div class="section-label">09 · Planning Beyond the MVP</div>
           <div class="ojt-prose">
-            <h2>The MVP was one phase of a larger product strategy.</h2>
+            <h2>The roadmap separated validation from product expansion.</h2>
             <p>
               I also created a future-phase product Idea designed to make the
               OJT offering substantially more robust and valuable across the
               broader customer base. That future state was broken into multiple
-              epics so the product could continue expanding in controlled
-              stages.
+              epics so the product could expand in controlled stages rather than
+              treating every desirable capability as part of the first release.
             </p>
             <p>
-              The roadmap separated immediate validation needs from the
-              capabilities required to build a more mature and commercially
-              valuable product.
+              The sequence distinguished what we needed now to prove the product
+              model, what should come next to deepen workflow value, and what
+              belonged later as the product surface and commercial opportunity
+              expanded.
             </p>
           </div>
 
-          <figure class="ojt-visual vision-visual">
-            <figcaption>MVP → Future Product Vision</figcaption>
-            <div class="vision-flow">
-              <article>
-                <span>MVP</span>
-                <strong>Complete core workflow</strong>
-                <ul>
-                  <li>Create objectives</li>
-                  <li>Assign mentors and apprentices</li>
-                  <li>View assigned work</li>
-                  <li>Observe competency</li>
-                  <li>Digital signoff</li>
-                  <li>Configured supporting evidence</li>
-                </ul>
-              </article>
-              <div class="vision-step">
-                <span aria-hidden="true">→</span>
-                <strong>Validate the core workflow</strong>
-              </div>
-              <article>
-                <span>Future product strategy</span>
-                <strong>Multiple next-phase epics</strong>
-                <ul>
-                  <li>Learner activity entry</li>
-                  <li>Expanded signoff models</li>
-                  <li>Advanced reporting</li>
-                  <li>Scheduling</li>
-                  <li>Workflow automation</li>
-                  <li>Broader administrative capabilities</li>
-                </ul>
-              </article>
-              <div class="vision-step vision-outcome">
-                <span aria-hidden="true">→</span>
-                <strong>Expand customer value and revenue potential</strong>
-              </div>
-            </div>
-          </figure>
+          <div
+            class="mvp-workflow"
+            role="list"
+            aria-label="Now, next, and later product strategy"
+          >
+            <article role="listitem">
+              <span>Now</span><strong>Prove the product model</strong>
+              <p>
+                Deliver the complete core OJT workflow, validate customer fit,
+                and establish real usage evidence.
+              </p>
+            </article>
+            <article role="listitem">
+              <span>Next</span><strong>Deepen workflow value</strong>
+              <p>
+                Add richer activity entry, signoff models, reporting, and
+                administrative capabilities based on what real usage shows.
+              </p>
+            </article>
+            <article role="listitem">
+              <span>Later</span><strong>Expand the product surface</strong>
+              <p>
+                Introduce scheduling, additional automation, lifecycle
+                management, and other adjacent capabilities where evidence
+                supports the investment.
+              </p>
+            </article>
+          </div>
 
           <details class="detail-expander">
             <summary>See the future product strategy</summary>
@@ -548,9 +695,9 @@
               </p>
               <p>
                 Organizing the future state as a larger Idea split into multiple
-                epics created a path toward a much more robust product with
-                greater value for customers that use OJT and substantial future
-                revenue potential.
+                epics created a path toward a much more robust product while
+                preserving the ability to learn from the MVP before committing
+                the entire roadmap.
               </p>
             </div>
           </details>
@@ -558,7 +705,7 @@
       </section>
 
       <section class="ojt-section section-shell" id="business-case">
-        <div class="section-label">08 · Business Case and Approval</div>
+        <div class="section-label">10 · Business Case and Approval</div>
         <div class="ojt-prose">
           <h2>I translated the research into a formal business case.</h2>
           <p>
@@ -585,7 +732,7 @@
       <section class="ojt-section ojt-launch" id="launch">
         <div class="section-shell">
           <div class="section-label">
-            09 · Limited Launch and Success Measures
+            11 · Limited Launch and Success Measures
           </div>
           <div class="ojt-prose">
             <h2>The planned introduction was intentionally controlled.</h2>
@@ -705,7 +852,7 @@
       </section>
 
       <section class="ojt-section section-shell" id="milestone">
-        <div class="section-label">10 · Product Milestone</div>
+        <div class="section-label">12 · Product Milestone</div>
         <div class="ojt-prose">
           <h2>
             Over approximately nine months, the initiative progressed through:
@@ -716,6 +863,7 @@
           <span role="listitem">Domain and competitive research</span>
           <span role="listitem">Validated product opportunity</span>
           <span role="listitem">Configurable enterprise product model</span>
+          <span role="listitem">Defined product and category boundary</span>
           <span role="listitem">Commercialization strategy</span>
           <span role="listitem">Approved business case</span>
           <span role="listitem">Implementation-ready MVP definition</span>
@@ -737,8 +885,8 @@
             <article>
               <h3>0→1 Product Strategy</h3>
               <p>
-                Turning customer, competitive, workflow, and commercial signals
-                into a defined product opportunity.
+                Turning six customer workflows, domain research, and commercial
+                signals into a scalable product model with explicit boundaries.
               </p>
             </article>
             <article>
@@ -751,8 +899,8 @@
             <article>
               <h3>Enterprise Product Judgment</h3>
               <p>
-                Creating a standardized workflow with configurable company-level
-                policies.
+                Distinguishing the common product core from legitimate policy
+                variation, customization pressure, and adjacent product scope.
               </p>
             </article>
             <article>
