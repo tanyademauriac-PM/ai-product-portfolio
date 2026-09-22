@@ -2840,6 +2840,10 @@ footer {
   color: var(--ink);
   font-size: clamp(25px, 3vw, 38px);
 }
+.ojt-decision.ojt-decision-compact {
+  font-size: clamp(16px, 1.55vw, 20px);
+  line-height: 1.5;
+}
 .decision-table {
   border: 1px solid var(--line);
 }
