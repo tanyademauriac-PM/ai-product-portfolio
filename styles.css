@@ -5834,3 +5834,21 @@ footer {
   max-width: none;
   width: 100%;
 }
+
+/* Homepage hero statement: restore original sans treatment at a slightly larger size */
+.home-page .home-hero h1 {
+  max-width: 680px;
+  font-family: var(--sans);
+  font-size: clamp(23px, 2.2vw, 28px);
+  font-weight: 540;
+  line-height: 1.45;
+  letter-spacing: -0.018em;
+  color: var(--ink);
+}
+
+@media (max-width: 760px) {
+  .home-page .home-hero h1 {
+    font-size: 23px;
+    line-height: 1.42;
+  }
+}
