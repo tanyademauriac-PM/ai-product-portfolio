@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A Product Launch That Fell Short | Tanya deMauriac</title>
+    <meta
+      name="description"
+      content="An anonymized enterprise SaaS case study about an underperforming product launch, post-launch metrics, stakeholder management, engineering partnership, and a roadmap pivot."
+    />
+    <link rel="icon" href="../favicon.svg" />
+    <link rel="stylesheet" href="../styles.css?v=failure-case-1" />
+
+    <!-- Microsoft Clarity analytics -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "ymxdk5bwbi");
+
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var incomingRef = params.get("ref");
+        if (incomingRef) {
+          sessionStorage.setItem("portfolio_ref", incomingRef);
+        }
+        var portfolioRef = incomingRef || sessionStorage.getItem("portfolio_ref");
+        if (portfolioRef) {
+          window.clarity("set", "portfolio_ref", portfolioRef);
+        }
+      })();
+    </script>
+  </head>
+  <body class="case-page failure-page">
+    <main id="top">
+      <header class="site-header">
+        <a class="brand" href="../" aria-label="Back to product portfolio">
+          <span class="brand-mark">Td</span>
+          <span><strong>Tanya deMauriac</strong><small>Product Portfolio</small></span>
+        </a>
+        <nav aria-label="Portfolio navigation">
+          <a href="../#capabilities">Capabilities</a>
+          <a href="../#case-studies">Case studies</a>
+          <a href="../#leadership">Leadership</a>
+        </nav>
+      </header>
+
+      <section class="hero failure-hero">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <a class="back-link" href="../">← Back to portfolio</a>
+          <div class="eyebrow">
+            <span class="status-dot"></span> Case Study 08 · Anonymized real product work
+          </div>
+          <p class="hero-capability">Product Failure, Post-Launch Metrics &amp; Roadmap Adaptation</p>
+          <h1>A Product Launch That Fell Short</h1>
+          <p class="hero-subtitle">
+            Metrics, Stakeholders, Engineering, and the Pivot
+          </p>
+          <p class="hero-lede">
+            Shortly after joining an enterprise SaaS company, I inherited a
+            long-requested Saved Filters feature that had been stalled in
+            discovery for several months. I was asked to take over the
+            initiative, course-correct the stalled discovery, and see it through
+            implementation and launch.
+          </p>
+          <div
+            class="capability-row capability-row-light"
+            role="group"
+            aria-label="Capabilities demonstrated"
+          >
+            <span class="capability-primary">Post-Launch Validation</span>
+            <span>Product Metrics</span>
+            <span>Stakeholder Management</span>
+            <span>Engineering Partnership</span>
+            <span>Roadmap Decisions</span>
+            <span>GTM Learning</span>
+          </div>
+          <div class="hero-actions">
+            <a class="primary-action" href="#retrospective">
+              Explore the retrospective
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="arrow-icon">
+                <path d="M5 12h14M13 6l6 6-6 6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <aside class="thesis-card" aria-label="Case study summary">
+          <div class="card-kicker">The product outcome</div>
+          <p>The feature shipped successfully. The outcome fell short.</p>
+          <ol>
+            <li><span>01</span> Adoption and reuse were lower than expected</li>
+            <li><span>02</span> Customer feedback explained the value gap</li>
+            <li><span>03</span> A real technical constraint remained</li>
+            <li><span>04</span> I changed the roadmap instead of forcing expansion</li>
+          </ol>
+        </aside>
+      </section>
+
+      <section class="case-disclosure section-shell" aria-label="Case study disclosure">
+        <strong>Anonymized real work</strong>
+        <p>
+          This case study describes a real enterprise SaaS feature launch.
+          Company, customer, industry, proprietary implementation details, and
+          confidential measurement thresholds have been removed or generalized.
+        </p>
+      </section>
+
+      <section class="overview section-shell" aria-label="Case study overview">
+        <div class="overview-item">
+          <span>Starting point</span><strong>Stalled discovery</strong>
+        </div>
+        <div class="overview-item">
+          <span>Launch result</span><strong>Feature shipped successfully</strong>
+        </div>
+        <div class="overview-item">
+          <span>Product outcome</span><strong>Adoption below expectations</strong>
+        </div>
+        <div class="overview-item">
+          <span>Decision</span><strong>Pivoted investment</strong>
+        </div>
+      </section>
+
+      <section class="failure-section section-shell" id="retrospective">
+        <div class="section-label">01 · One Launch, Several Product Leadership Challenges</div>
+        <div class="failure-prose">
+          <h2>An underperforming launch can surface several leadership challenges at once.</h2>
+          <p>
+            This launch made me stop and examine several product leadership
+            questions.
+          </p>
+        </div>
+
+        <div class="failure-thoughts" aria-label="Retrospective questions">
+          <p>Where did it fail?</p>
+          <p>Where was I wrong?</p>
+          <p>What metrics did I use? and what would have been more useful?</p>
+          <p>Should we have pivoted early on?</p>
+        </div>
+
+        <div class="failure-qa-grid">
+          <article>
+            <span>01</span>
+            <h3>Where did it fail?</h3>
+            <p>
+              The feature shipped, but adoption and reuse were lower than I
+              expected.
+            </p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <h3>Where was I wrong?</h3>
+            <p>
+              I was so focused on solving the delivery problem I inherited that
+              I underestimated the launch and adoption problem.
+            </p>
+          </article>
+
+          <article>
+            <span>03</span>
+            <h3>What metrics did I use, and what would have been more useful?</h3>
+            <p>
+              After launch, I measured adoption, Saved Filter creation,
+              configuration behavior, reuse, and session behavior.
+            </p>
+            <p>
+              Those metrics helped expose the problem. In hindsight, I would
+              have established clearer behavioral success measures and adoption
+              expectations before launch so we could evaluate the outcome
+              against an explicit product hypothesis rather than simply
+              observing usage afterward.
+            </p>
+          </article>
+
+          <article>
+            <span>04</span>
+            <h3>Should we have pivoted earlier?</h3>
+            <p>
+              Not before we had evidence.
+            </p>
+            <p>
+              The feature solved a real problem and worked as designed. The
+              important decision was not to abandon it prematurely, but to use
+              post-launch evidence to determine whether additional investment
+              was justified.
+            </p>
+            <p>
+              Once the adoption data and customer feedback told us it was not, I
+              changed the roadmap.
+            </p>
+          </article>
+
+          <article>
+            <span>05</span>
+            <h3>How did I handle difficult stakeholder conversations?</h3>
+            <p>
+              When customer-facing teams continued bringing us the same unmet
+              need, I investigated it again rather than simply repeating an old
+              answer.
+            </p>
+            <p>
+              When the technical constraint remained, I explained it clearly,
+              kept the customer need visible, and avoided promising something
+              we could not responsibly deliver.
+            </p>
+          </article>
+
+          <article>
+            <span>06</span>
+            <h3>How did I work with Engineering when something went wrong?</h3>
+            <p>
+              I respected the original technical assessment while repeatedly
+              asking whether the underlying conditions had changed.
+            </p>
+            <p>
+              I did not blame Engineering or pressure the team into supporting
+              something they believed we could not responsibly deliver.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="failure-section failure-tint" id="what-failed">
+        <div class="section-shell">
+          <div class="section-label">02 · What Actually Failed?</div>
+          <div class="failure-prose">
+            <h2>Two signals pointed to the same disappointing product outcome.</h2>
+          </div>
+
+          <div class="failure-signal-grid">
+            <article>
+              <span>Signal 01</span>
+              <h3>Adoption was lower than expected.</h3>
+              <p>
+                Our product organization was still developing stronger
+                go-to-market practices, and the launch did not have enough
+                enablement behind it.
+              </p>
+              <p>
+                I had been heavily focused on rescuing a stalled initiative and
+                getting it delivered.
+              </p>
+              <div class="failure-sequence">
+                <strong>discovery → delivery</strong>
+                <span>became</span>
+                <strong>discovery → delivery → adoption</strong>
+              </div>
+              <p>That part of the outcome was mine to own.</p>
+            </article>
+
+            <article>
+              <span>Signal 02</span>
+              <h3>The feature did not reduce enough customer effort.</h3>
+              <p>
+                Customers repeatedly requested an enhancement that would have
+                made Saved Filters more useful and eliminated more of the work
+                involved in running reports.
+              </p>
+              <p>
+                We had deliberately excluded that capability because our
+                principal engineer had identified a technical constraint.
+              </p>
+              <p>
+                I could own the GTM weakness without pretending I could
+                magically remove a legitimate engineering constraint.
+              </p>
+            </article>
+          </div>
+
+          <blockquote class="failure-decision">
+            <strong>We successfully delivered the capability, but it did not create as much customer value or adoption as I expected.</strong>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="failure-section section-shell" id="metrics">
+        <div class="section-label">03 · How I Knew the Outcome Was Falling Short</div>
+        <div class="failure-prose">
+          <h2>The quantitative evidence showed what was happening. The qualitative evidence helped explain why.</h2>
+          <p>
+            After launch, I worked regularly with our data team to understand
+            what administrators were actually doing with the feature.
+          </p>
+          <p>
+            We tracked how many administrators created Saved Filter sets, which
+            filters they saved, how many sets they created, and how often they
+            returned and reused them.
+          </p>
+          <p>I also reviewed session behavior in LogRocket.</p>
+          <p>
+            Together, those signals showed lower adoption and reuse than I had
+            expected.
+          </p>
+        </div>
+
+        <div class="failure-metric-grid" aria-label="Post-launch evidence">
+          <article><span>01</span><strong>Administrators creating Saved Filter sets</strong></article>
+          <article><span>02</span><strong>Filters being saved</strong></article>
+          <article><span>03</span><strong>Number of sets created</strong></article>
+          <article><span>04</span><strong>Return and reuse behavior</strong></article>
+          <article><span>05</span><strong>Session behavior in LogRocket</strong></article>
+          <article><span>06</span><strong>Recurring customer enhancement requests</strong></article>
+        </div>
+
+        <div class="failure-prose failure-prose-after-grid">
+          <p>
+            But the quantitative evidence only told me what was happening.
+          </p>
+          <p>The qualitative evidence helped explain why.</p>
+          <p>
+            Account managers repeatedly brought us the same customer request
+            for an enhancement that would have made Saved Filters more useful
+            and reduced more of the effort involved in running reports.
+          </p>
+          <p>
+            That feedback gave context to what we were seeing in the behavioral
+            data.
+          </p>
+        </div>
+      </section>
+
+      <section class="failure-section failure-tint" id="stakeholders">
+        <div class="section-shell">
+          <div class="section-label">04 · Managing Stakeholders and Engineering Through the Problem</div>
+          <div class="failure-prose">
+            <h2>I kept challenging the constraint without turning Engineering into the problem.</h2>
+            <p>
+              The enhancement customers wanted had been deliberately excluded
+              because of a technical limitation identified by our principal
+              engineer.
+            </p>
+            <p>But I did not treat the original answer as permanent.</p>
+            <p>
+              Each time the request resurfaced, I went back to Engineering.
+            </p>
+            <p>
+              I asked whether the technical conditions had changed and whether
+              there was now a responsible way to support the request.
+            </p>
+            <p>
+              When the answer remained no, I communicated that clearly to
+              customer-facing stakeholders, documented the unmet need, and kept
+              it available for future reconsideration.
+            </p>
+          </div>
+
+          <div class="failure-principle-grid">
+            <article>
+              <span>01</span>
+              <strong>I did not blame Engineering.</strong>
+            </article>
+            <article>
+              <span>02</span>
+              <strong>I did not pressure the team into an implementation they believed was technically irresponsible.</strong>
+            </article>
+            <article>
+              <span>03</span>
+              <strong>I did not promise stakeholders functionality we could not reliably deliver.</strong>
+            </article>
+          </div>
+
+          <blockquote class="failure-decision">
+            <strong>A technical constraint can make the answer “not now,” but it should never make the customer need disappear.</strong>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="failure-section section-shell" id="pivot">
+        <div class="section-label">05 · The Pivot</div>
+        <div class="failure-prose">
+          <h2>The feature did not need to be rolled back. The investment decision needed to change.</h2>
+          <p>
+            This was not a situation where rollback was the right response.
+          </p>
+          <p>The feature worked.</p>
+          <p>Some customers were receiving value from it.</p>
+          <p>Removing it would not have solved the underlying problem.</p>
+          <p>The investment decision was what needed to change.</p>
+          <p>
+            I had originally planned to extend reusable Saved Filters into
+            additional reporting workflows.
+          </p>
+          <p>
+            But the adoption data and customer feedback did not justify
+            expanding the capability at that point.
+          </p>
+          <p>So I changed the roadmap.</p>
+          <p>
+            Rather than continuing to invest because we had already spent time
+            building the feature, or because I wanted the original hypothesis
+            to prove correct, we prioritized other customer problems with
+            stronger evidence of value.
+          </p>
+        </div>
+
+        <div class="failure-pivot-flow" aria-label="Roadmap pivot">
+          <article>
+            <span>Original plan</span>
+            <strong>Extend reusable Saved Filters to additional reports</strong>
+          </article>
+          <div aria-hidden="true">→</div>
+          <article>
+            <span>Post-launch evidence</span>
+            <strong>Adoption and customer value did not justify expansion</strong>
+          </article>
+          <div aria-hidden="true">→</div>
+          <article>
+            <span>Roadmap decision</span>
+            <strong>Redirect investment to higher-value customer problems</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="failure-section failure-tint" id="learning">
+        <div class="section-shell">
+          <div class="section-label">06 · What I Got Wrong</div>
+          <div class="failure-prose">
+            <h2>I was so focused on solving the delivery problem I inherited that I underestimated the launch and adoption problem.</h2>
+            <p>
+              The experience changed how I think about launch success.
+            </p>
+            <p>
+              I had been asked to rescue an initiative that had spent months in
+              discovery, and much of my attention naturally went toward
+              narrowing the problem, establishing scope, creating momentum, and
+              getting it delivered.
+            </p>
+            <p>I did those things successfully.</p>
+            <p>But shipping was not the outcome.</p>
+            <p>
+              I learned to treat adoption planning, behavioral success measures,
+              launch enablement, and post-launch validation as part of the
+              product itself, not activities that begin after development ends.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="failure-section section-shell" id="evidence">
+        <div class="section-label">07 · What This Case Demonstrates</div>
+        <div class="failure-prose">
+          <h2>The leadership evidence behind one underperforming launch.</h2>
+        </div>
+
+        <div class="failure-evidence-grid">
+          <article><span>Specific product or feature</span><strong>A Saved Filters capability that allowed administrators to save and reuse frequently used reporting configurations</strong></article>
+          <article><span>What I inherited</span><strong>An initiative that had been stalled in discovery for several months and needed course correction through discovery, implementation, and launch</strong></article>
+          <article><span>What failed</span><strong>Adoption and reuse were below expectations, while customer feedback showed the solution was not reducing enough reporting effort for some users</strong></article>
+          <article><span>How I measured it</span><strong>Adoption, Saved Filter creation, configuration behavior, reuse, LogRocket session behavior, and recurring qualitative feedback</strong></article>
+          <article><span>What I got wrong</span><strong>I focused heavily on solving the discovery and delivery problem while underestimating the importance of GTM and adoption planning</strong></article>
+          <article><span>Technical constraint</span><strong>A customer-requested enhancement had been intentionally excluded based on a principal engineer's technical assessment</strong></article>
+          <article><span>Stakeholder management</span><strong>I investigated recurring requests again rather than simply repeating the previous answer</strong></article>
+          <article><span>Engineering partnership</span><strong>I repeatedly verified whether the technical constraint still existed while respecting Engineering's assessment</strong></article>
+          <article><span>Decision-making</span><strong>I did not promise or force implementation of something Engineering could not responsibly support</strong></article>
+          <article><span>Communication</span><strong>I explained the constraint transparently and kept the unmet customer need documented for future reconsideration</strong></article>
+          <article><span>Pivot</span><strong>I stopped the planned expansion of the capability and redirected investment toward higher-value roadmap work</strong></article>
+          <article><span>Learning</span><strong>Delivery, GTM, adoption, customer effort, and post-launch validation all have to be considered part of product success</strong></article>
+        </div>
+      </section>
+
+      <section class="failure-close">
+        <div class="section-shell">
+          <div class="section-label light">08 · The Failure, Plainly</div>
+          <div class="failure-close-copy">
+            <p>I shipped it.</p>
+            <p>The adoption data didn't support the outcome I expected.</p>
+            <p>Customer feedback explained why.</p>
+            <p>I took responsibility for the GTM weakness.</p>
+            <p>I repeatedly challenged whether the technical constraint still applied.</p>
+            <p>I didn't blame Engineering or make promises we couldn't keep.</p>
+            <p>And when the evidence didn't support further investment, I changed the roadmap.</p>
+          </div>
+        </div>
+      </section>
+
+      <nav class="case-end-nav" aria-label="Case study navigation">
+        <a href="../">← Back to portfolio</a>
+        <a href="../agentic-product-discovery-lab/">Next case study: AI Product Intake Agent →</a>
+      </nav>
+
+      <footer>
+        <div>
+          <strong>Tanya deMauriac</strong><span>Senior Product Manager · Enterprise SaaS · AI Products</span>
+        </div>
+        <div class="footer-meta">
+          <a href="../">Back to portfolio</a>
+          <a href="https://github.com/tanyademauriac-PM/ai-product-portfolio" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+          <span>Case Study 08 · 2026</span>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
