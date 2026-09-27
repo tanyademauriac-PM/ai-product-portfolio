@@ -9,7 +9,7 @@
       content="An anonymized enterprise SaaS case study about an underperforming product launch, post-launch metrics, stakeholder management, engineering partnership, and a roadmap pivot."
     />
     <link rel="icon" href="../favicon.svg" />
-    <link rel="stylesheet" href="../styles.css?v=failure-case-1" />
+    <link rel="stylesheet" href="../styles.css?v=failure-case-2" />
 
     <!-- Microsoft Clarity analytics -->
     <script type="text/javascript">
@@ -136,8 +136,20 @@
         <div class="failure-thoughts" aria-label="Retrospective questions">
           <p>Where did it fail?</p>
           <p>Where was I wrong?</p>
-          <p>What metrics did I use? and what would have been more useful?</p>
+          <p>Were the metrics I used the right ones or would others have been more useful?</p>
           <p>Should we have pivoted early on?</p>
+        </div>
+
+        <div class="failure-prose">
+          <p>
+            <strong>Two symptoms were pointing to the same product outcome failure.</strong>
+            Adoption was lower than expected because the organization was still
+            developing its GTM discipline and the launch did not have enough
+            enablement behind it. At the same time, the feature did not deliver
+            enough value for some administrators because an enhancement that
+            would have reduced reporting effort further was technically
+            constrained and deliberately excluded.
+          </p>
         </div>
 
         <div class="failure-qa-grid">
@@ -189,7 +201,7 @@
             </p>
             <p>
               Once the adoption data and customer feedback told us it was not, I
-              changed the roadmap.
+              knew the right answer would be to change the roadmap.
             </p>
           </article>
 
@@ -197,12 +209,13 @@
             <span>05</span>
             <h3>How did I handle difficult stakeholder conversations?</h3>
             <p>
-              When customer-facing teams continued bringing us the same unmet
-              need, I investigated it again rather than simply repeating an old
-              answer.
+              When customer-facing teams continued bringing us the same request
+              for the enhancement we had excluded because it would not work with
+              the existing infrastructure, I investigated it again rather than
+              simply repeating an old answer.
             </p>
             <p>
-              When the technical constraint remained, I explained it clearly,
+              When the technical constraint remained, I explained that clearly,
               kept the customer need visible, and avoided promising something
               we could not responsibly deliver.
             </p>
@@ -212,12 +225,15 @@
             <span>06</span>
             <h3>How did I work with Engineering when something went wrong?</h3>
             <p>
-              I respected the original technical assessment while repeatedly
-              asking whether the underlying conditions had changed.
+              I understood during discovery why the requested enhancement could
+              not work with the existing infrastructure. Each time the request
+              resurfaced, I went back to Engineering to ask whether the technical
+              conditions had changed.
             </p>
             <p>
-              I did not blame Engineering or pressure the team into supporting
-              something they believed we could not responsibly deliver.
+              The constraint was a product reality to manage. I kept the customer
+              need visible without pushing Engineering toward an implementation
+              the infrastructure could not responsibly support.
             </p>
           </article>
         </div>
@@ -296,16 +312,7 @@
           </p>
         </div>
 
-        <div class="failure-metric-grid" aria-label="Post-launch evidence">
-          <article><span>01</span><strong>Administrators creating Saved Filter sets</strong></article>
-          <article><span>02</span><strong>Filters being saved</strong></article>
-          <article><span>03</span><strong>Number of sets created</strong></article>
-          <article><span>04</span><strong>Return and reuse behavior</strong></article>
-          <article><span>05</span><strong>Session behavior in LogRocket</strong></article>
-          <article><span>06</span><strong>Recurring customer enhancement requests</strong></article>
-        </div>
-
-        <div class="failure-prose failure-prose-after-grid">
+        <div class="failure-prose">
           <p>
             But the quantitative evidence only told me what was happening.
           </p>
@@ -313,7 +320,9 @@
           <p>
             Account managers repeatedly brought us the same customer request
             for an enhancement that would have made Saved Filters more useful
-            and reduced more of the effort involved in running reports.
+            and reduced more of the effort involved in running reports. What was
+            that enhancement request? You guessed it: it was the functionality
+            that was technically constrained.
           </p>
           <p>
             That feedback gave context to what we were seeing in the behavioral
@@ -326,11 +335,11 @@
         <div class="section-shell">
           <div class="section-label">04 · Managing Stakeholders and Engineering Through the Problem</div>
           <div class="failure-prose">
-            <h2>I kept challenging the constraint without turning Engineering into the problem.</h2>
+            <h2>I kept revisiting the technical constraint as the customer need resurfaced.</h2>
             <p>
-              The enhancement customers wanted had been deliberately excluded
-              because of a technical limitation identified by our principal
-              engineer.
+              The enhancement customers started to request post launch had been
+              deliberately excluded because of a technical limitation identified
+              by our principal engineer.
             </p>
             <p>But I did not treat the original answer as permanent.</p>
             <p>
@@ -350,14 +359,10 @@
           <div class="failure-principle-grid">
             <article>
               <span>01</span>
-              <strong>I did not blame Engineering.</strong>
-            </article>
-            <article>
-              <span>02</span>
               <strong>I did not pressure the team into an implementation they believed was technically irresponsible.</strong>
             </article>
             <article>
-              <span>03</span>
+              <span>02</span>
               <strong>I did not promise stakeholders functionality we could not reliably deliver.</strong>
             </article>
           </div>
@@ -387,7 +392,7 @@
             But the adoption data and customer feedback did not justify
             expanding the capability at that point.
           </p>
-          <p>So I changed the roadmap.</p>
+          <p>So the roadmap had to change.</p>
           <p>
             Rather than continuing to invest because we had already spent time
             building the feature, or because I wanted the original hypothesis
