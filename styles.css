@@ -5886,6 +5886,9 @@ footer {
 .failure-prose p:last-child {
   margin-bottom: 0;
 }
+.failure-retrospective-context {
+  margin-bottom: 36px;
+}
 .failure-thoughts {
   max-width: 920px;
   margin: 56px 0 64px;
