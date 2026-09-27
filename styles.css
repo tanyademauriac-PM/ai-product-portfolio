@@ -6093,7 +6093,7 @@ footer {
 }
 .failure-close {
   padding: 104px 0;
-  background: var(--forest);
+  background: var(--forest-light);
   color: var(--white);
 }
 .failure-close .section-label.light {
