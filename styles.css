@@ -6153,23 +6153,14 @@ footer {
   }
 }
 
-/* Original portrait below the homepage introduction, without cropping. */
-.home-photo-block {
-  margin-top: 30px;
-}
-
-.home-intro-photo {
+/* Homepage header portrait: circular display of the original uploaded photo. */
+.home-page .brand-photo {
   display: block;
-  width: clamp(170px, 34%, 210px);
-  height: auto;
-}
-
-@media (max-width: 640px) {
-  .home-photo-block {
-    margin-top: 24px;
-  }
-
-  .home-intro-photo {
-    width: 170px;
-  }
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 1px solid rgba(91, 145, 87, 0.5);
 }
