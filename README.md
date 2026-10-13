@@ -14,3 +14,9 @@ A growing collection of case studies showing my work across AI product design, p
 All product data shown in the Agentic Product Discovery Lab is synthetic and was created solely for that experiment.
 
 [View the portfolio](https://tanyademauriac-pm.github.io/ai-product-portfolio/)
+
+## Header standard for future case studies
+
+Use [the standard case-study header](templates/case-study-header.html) when creating a new case study. The 44px circular portrait in the upper-left corner must match the homepage. Copy the template markup into the new case study's `index.html`, using `../TD%20Profile%20Pic-sm.PNG` and the shared `../styles.css` stylesheet for a one-folder-deep case-study URL. Keep `class="brand-photo"` to use the shared styling, and never edit the original photo file.
+
+The stylesheet also includes a fallback for older case-study headers containing `<span class="brand-mark">Td</span>`, so pages created from older markup still display the portrait automatically. Prefer the accessible image markup from the template for new pages.
