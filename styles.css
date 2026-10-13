@@ -6153,8 +6153,8 @@ footer {
   }
 }
 
-/* Homepage header portrait: circular display of the original uploaded photo. */
-.home-page .brand-photo {
+/* Shared photo styles for the homepage and every case-study header. */
+.brand-photo {
   display: block;
   width: 44px;
   height: 44px;
@@ -6163,4 +6163,17 @@ footer {
   object-position: center;
   border-radius: 50%;
   border: 1px solid rgba(91, 145, 87, 0.5);
+}
+
+/* Backward-compatible fallback for future case-study pages using the old Td markup. */
+.case-page .brand-mark {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  border: 1px solid rgba(91, 145, 87, 0.5);
+  border-radius: 50%;
+  background-image: url("TD%20Profile%20Pic-sm.PNG");
+  background-position: center;
+  background-size: cover;
+  font-size: 0;
 }
