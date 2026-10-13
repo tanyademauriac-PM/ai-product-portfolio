@@ -6152,3 +6152,38 @@ footer {
     padding: 24px;
   }
 }
+
+/* Homepage profile portrait: display the uploaded file without image cropping. */
+.home-intro-heading-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 26px;
+}
+
+.home-intro-heading-row .portfolio-kicker {
+  margin: 30px 0 0;
+}
+
+.home-intro-photo {
+  display: block;
+  width: clamp(145px, 36%, 190px);
+  height: auto;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 480px) {
+  .home-intro-heading-row {
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+
+  .home-intro-heading-row .portfolio-kicker {
+    margin-top: 18px;
+  }
+
+  .home-intro-photo {
+    width: 122px;
+  }
+}
