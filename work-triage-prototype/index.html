@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Work Triage Prototype: Validate Before Engineering Investment | Tanya deMauriac</title>
-<meta name="description" content="How Tanya deMauriac used an interactive work-triage prototype to clarify an ambiguous operational workflow, test product decisions and define an MVP before engineering investment."/>
+<title>Work Triage: Better Product Decisions Through Rapid Prototyping | Tanya deMauriac</title>
+<meta name="description" content="How Tanya deMauriac uses rapid prototypes to clarify product decisions, challenge workflow assumptions and guide engineering investment, illustrated through a functional work-triage concept."/>
 <link rel="icon" href="../favicon.svg"/>
 <link rel="stylesheet" href="../styles.css?v=header-portrait-20261013"/>
 <style>
@@ -65,9 +65,9 @@
 <div class="hero-grid" aria-hidden="true"></div>
 <div class="hero-copy">
 <a class="back-link" href="../">← Back to portfolio</a>
-<div class="eyebrow"><span class="status-dot"></span> Independent product design &amp; working prototype</div>
-<h1>Work Triage Prototype: Validate Before Engineering Investment</h1>
-<p class="triage-intro">A short path from an ambiguous workflow problem to something people can actually try. I designed a focused work-triage experience, built a functional prototype and used it to make the product decisions—and the unanswered questions—visible before a larger build.</p>
+<div class="eyebrow"><span class="status-dot"></span> Prototype-first product decisions · Working example</div>
+<h1>Work Triage: Better Product Decisions Through Rapid Prototyping</h1>
+<p class="triage-intro">I use rapid, working prototypes to turn ambiguous business problems into decisions a team can evaluate. They help me test workflow behavior, uncover difficult handoffs and decide what deserves further validation before committing significant engineering time. This Work Triage example shows that approach in action.</p>
 <div class="triage-tags"><span>Prototype-first product management</span><span>MVP strategy</span><span>Workflow design</span><span>Product judgment</span><span>AI-assisted implementation</span></div>
 <div class="triage-action-row">
 <a class="triage-action" href="https://tanyademauriac-pm.github.io/legal-work-triage-demo/" target="_blank" rel="noopener noreferrer">Try the live prototype ↗</a>
@@ -79,24 +79,24 @@
 <p>This is an independent product-design exercise using a hypothetical legal operations setting. All cases, people, values and activity are fictional. It was built to explore a workflow and test prototype behavior—not deployed for a client or validated with production users. The problem framing and recommended next steps are hypotheses to investigate, not claims about a specific organization.</p>
 </section>
 <section class="overview section-shell" aria-label="Case study overview">
-<div class="overview-item"><span>My focus</span><strong>Problem framing, MVP, prototype and testing</strong></div>
+<div class="overview-item"><span>What I demonstrate</span><strong>Discovery, product judgment &amp; investment decisions</strong></div>
 <div class="overview-item"><span>Domain</span><strong>Fictional legal case operations</strong></div>
 <div class="overview-item"><span>Prototype</span><strong>6 cases · 7 independent attention needs</strong></div>
 <div class="overview-item"><span>Verification</span><strong>30 automated functional tests passed</strong></div>
 </section>
 <section class="triage-section section-shell" id="problem">
-<div class="section-label">01 · The problem worth testing</div>
-<h2>The information exists. Finding the work still takes effort.</h2>
+<div class="section-label">01 · Frame the problem before proposing features</div>
+<h2>Start with the user's decision, not a feature list.</h2>
 <p>Imagine a case manager responsible for roughly 120 active cases. Most are moving along, but the meaningful issues are scattered across notes, tasks, document records and promises made to clients. A case status alone doesn't say which next step deserves attention today.</p>
 <p>That creates two related problems: the case manager spends time hunting for work, while an operational leader needs to understand what's happening without asking for separate status updates. My hypothesis was that the gap wasn't simply missing information; it was the step between seeing a case and knowing what to do next.</p>
 <div class="triage-grid">
 <article class="triage-panel"><h3>Who I designed for first</h3><p>The <strong>case manager</strong> making daily decisions. Attorneys and paralegals remain the owners of the work they are authorized to perform. Operations gets a read-only view of what has been requested, started, resolved or left waiting.</p></article>
-<article class="triage-panel"><h3>What still needed validation</h3><p>Perhaps the real blocker is inconsistent records, unclear operating rules or insufficient capacity. The prototype lets us examine those possibilities before treating another new interface as the answer.</p></article>
+<article class="triage-panel"><h3>What I'd validate before building</h3><p>Perhaps the real blocker is inconsistent records, unclear operating rules or insufficient capacity. The prototype lets us examine those possibilities before treating another new interface as the answer.</p></article>
 </div>
 </section>
 <section class="triage-section section-shell" id="decisions">
-<div class="section-label">02 · The product choice</div>
-<h2>Don't stop at a list of exceptions.</h2>
+<div class="section-label">02 · Make a deliberate MVP choice</div>
+<h2>Test a useful decision workflow, not just a new alert.</h2>
 <p>I considered a simple list of potentially problematic cases. That would reduce hunting, but it could leave the case manager sorting through yet another queue. I chose a narrower but more complete interaction: show <em>why</em> a specific issue has surfaced, make the available response clear, and record enough follow-through for other roles to see what happened.</p>
 <div class="triage-flow" aria-label="Proposed work triage flow">
 <div class="triage-step"><small>01</small><strong>Recognize</strong><span>Surface an issue, not a vague case status.</span></div>
@@ -107,8 +107,8 @@
 <p><strong>My MVP boundary:</strong> one case manager's decision journey, a small set of meaningful actions and an Operations view drawing on those same records. No replacement case-management system, automated legal decisions or production integrations.</p>
 </section>
 <section class="triage-section section-shell" id="demo">
-<div class="section-label">03 · Try the prototype</div>
-<h2>Interactive enough to expose the tricky decisions.</h2>
+<div class="section-label">03 · Make the decisions testable</div>
+<h2>Build only enough to examine the riskiest handoffs.</h2>
 <p>The browser demo contains six fictional client cases and seven separately tracked attention needs. The case manager is Alex Rivera, supported by attorney Taylor Bennett and paralegal Jamie Torres. The clock is fixed so the scenarios are predictable.</p>
 <div class="triage-examples">
 <article><h3>One case, two different needs</h3><p>Avery has a callback commitment that needs attention and a separate document dependency that is appropriately waiting. The two must not be treated as one case-level status.</p></article>
@@ -123,8 +123,8 @@
 </div>
 </section>
 <section class="triage-section section-shell" id="learning">
-<div class="section-label">04 · What prototyping gave us</div>
-<h2>The useful discoveries were in the details.</h2>
+<div class="section-label">04 · Let the prototype sharpen the product decisions</div>
+<h2>Small interactions reveal big product decisions.</h2>
 <p>A clickable workflow forced decisions that a high-level roadmap or mockup could easily leave unresolved. One especially important correction: a generic "incorrect signal" action must not silently dismiss a confirmed outstanding callback, even after the user records a future follow-up. The interaction and underlying logic were adjusted to protect that commitment.</p>
 <ul class="triage-rules">
 <li><strong>Separate attention needs from cases.</strong> One waiting dependency doesn't erase another issue that requires action.</li>
@@ -136,8 +136,8 @@
 <p>I shaped the problem, scenarios, UX decisions, state boundaries and test expectations, using AI coding assistance to accelerate implementation. The prototype passed <strong>30 automated functional tests</strong> and underwent targeted browser checks. Those checks establish that the scripted interactions behaved as intended; they do not establish whether the product improves real-world operations.</p>
 </section>
 <section class="triage-section section-shell" id="next">
-<div class="section-label">05 · What I would validate next</div>
-<h2>Test the decisions with users before committing to integrations.</h2>
+<div class="section-label">05 · Gather evidence before the larger investment</div>
+<h2>Validate the value with real users before expanding the build.</h2>
 <div class="triage-grid">
 <article class="triage-panel"><h3>Decision speed and quality</h3><p>Observe case managers reviewing comparable situations today, then measure how efficiently they reach an <em>appropriate</em> next step with the prototype. Check the quality of those decisions, not just the time spent.</p></article>
 <article class="triage-panel"><h3>Important work handled on time</h3><p>Measure whether actual intervention needs receive the necessary response within an agreed window. Review unflagged cases for misses, and distinguish a request from acceptance or completed work.</p></article>
@@ -145,7 +145,7 @@
 <p>I would also check record reliability, authority rules, false alerts and behavior at a realistic caseload. Only then would I plan durable records, permissions, audit history, case-system updates and automated follow-up with engineering. If the pilot showed that policy or team capacity—not discovery—is the dominant problem, I'd change direction rather than add features.</p>
 </section>
 <section class="section-shell triage-ending">
-<h2>The point: move quickly, learn what to build, then invest with confidence.</h2>
+<h2>Prototype to learn. Invest when the evidence supports it.</h2>
 <p>This prototype deliberately does less than a full product. Its value is making the workflow concrete enough to challenge assumptions, identify risky handoffs and decide where production engineering would actually help.</p>
 <div class="triage-action-row"><a class="triage-action" href="https://tanyademauriac-pm.github.io/legal-work-triage-demo/" target="_blank" rel="noopener noreferrer">Explore the live prototype ↗</a><a class="triage-action secondary" href="../">Back to all case studies ↑</a></div>
 </section>
