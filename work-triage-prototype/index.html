@@ -71,82 +71,86 @@
 <div class="triage-tags"><span>Prototype-first product management</span><span>MVP strategy</span><span>Workflow design</span><span>Product judgment</span><span>AI-assisted implementation</span></div>
 <div class="triage-action-row">
 <a class="triage-action" href="https://tanyademauriac-pm.github.io/legal-work-triage-demo/" target="_blank" rel="noopener noreferrer">Try the live prototype ↗</a>
-<a class="triage-action secondary" href="#decisions">See the product decisions ↓</a>
+<a class="triage-action secondary" href="#challenge">Read the product story ↓</a>
 </div>
 </div></section>
-<section class="case-disclosure section-shell triage-disclosure" aria-label="Case study disclosure">
+<section class="case-disclosure section-shell triage-disclosure" aria-label="Case study background">
 <strong>About this case study</strong>
-<p>This is an independent product-design exercise using a hypothetical legal operations setting. All cases, people, values and activity are fictional. It was built to explore a workflow and test prototype behavior—not deployed for a client or validated with production users. The problem framing and recommended next steps are hypotheses to investigate, not claims about a specific organization.</p>
+<p>An independent product design exercise using a fictional legal operations scenario. All case records and people in the prototype are fictional.</p>
 </section>
 <section class="overview section-shell" aria-label="Case study overview">
-<div class="overview-item"><span>What I demonstrate</span><strong>Discovery, product judgment &amp; investment decisions</strong></div>
-<div class="overview-item"><span>Domain</span><strong>Fictional legal case operations</strong></div>
-<div class="overview-item"><span>Prototype</span><strong>6 cases · 7 independent attention needs</strong></div>
+<div class="overview-item"><span>My focus</span><strong>Product strategy, workflow decisions &amp; prototyping</strong></div>
+<div class="overview-item"><span>Scenario</span><strong>Legal case operations</strong></div>
+<div class="overview-item"><span>Working example</span><strong>6 cases · 7 separate attention needs</strong></div>
 <div class="overview-item"><span>Verification</span><strong>30 automated functional tests passed</strong></div>
 </section>
 <section class="triage-section section-shell" id="problem">
-<div class="section-label">01 · Frame the problem before proposing features</div>
-<h2>Start with the user's decision, not a feature list.</h2>
-<p>Imagine a case manager responsible for roughly 120 active cases. Most are moving along, but the meaningful issues are scattered across notes, tasks, document records and promises made to clients. A case status alone doesn't say which next step deserves attention today.</p>
-<p>That creates two related problems: the case manager spends time hunting for work, while an operational leader needs to understand what's happening without asking for separate status updates. My hypothesis was that the gap wasn't simply missing information; it was the step between seeing a case and knowing what to do next.</p>
-<div class="triage-grid">
-<article class="triage-panel"><h3>Who I designed for first</h3><p>The <strong>case manager</strong> making daily decisions. Attorneys and paralegals remain the owners of the work they are authorized to perform. Operations gets a read-only view of what has been requested, started, resolved or left waiting.</p></article>
-<article class="triage-panel"><h3>What I'd validate before building</h3><p>Perhaps the real blocker is inconsistent records, unclear operating rules or insufficient capacity. The prototype lets us examine those possibilities before treating another new interface as the answer.</p></article>
-</div>
+<div class="section-label">01 · The Situation</div>
+<h2>A large caseload can hide the work that needs attention today.</h2>
+<p>In this scenario, a case manager oversees roughly 120 active cases. Information is scattered across notes, tasks, document records and commitments to clients. The case manager has to search through those records to work out which situations need a response, even when most cases are progressing normally.</p>
+<p>Operational leaders face a related problem. They need to understand which issues have been addressed, which are waiting and which require help, without interrupting the team for another status update.</p>
+</section>
+<section class="triage-section section-shell" id="challenge">
+<div class="section-label">02 · The Challenge</div>
+<h2>Finding an issue doesn't automatically tell someone what to do next.</h2>
+<p>An exception list might help case managers find more problems, but it could also become one more queue to interpret. Seeing a warning is only useful if the person can understand the evidence, decide on the next step and keep that work from disappearing.</p>
+<p>Responsibility complicates the workflow. A case manager may recognize that an attorney's input is needed, but that doesn't mean the attorney has accepted the request. And a case can be waiting on one dependency while another issue requires immediate attention.</p>
+</section>
+<section class="triage-section section-shell" id="approach">
+<div class="section-label">03 · How I Approached It</div>
+<h2>I designed around the case manager's decisions, not the entire case-management system.</h2>
+<p>I started with one question: <strong>What does the case manager need to recognize, decide and record to keep the right work moving?</strong> That gave me a manageable workflow to prototype instead of an open-ended plan to rebuild case management.</p>
+<p>The case manager is the primary user. Attorneys and paralegals retain responsibility for work within their roles, while an Operations view shows the status of recorded actions. I defined the scenarios, response options, responsibility boundaries and functional checks, then used AI coding assistance to build the interactive experience.</p>
 </section>
 <section class="triage-section section-shell" id="decisions">
-<div class="section-label">02 · Make a deliberate MVP choice</div>
-<h2>Test a useful decision workflow, not just a new alert.</h2>
-<p>I considered a simple list of potentially problematic cases. That would reduce hunting, but it could leave the case manager sorting through yet another queue. I chose a narrower but more complete interaction: show <em>why</em> a specific issue has surfaced, make the available response clear, and record enough follow-through for other roles to see what happened.</p>
-<div class="triage-flow" aria-label="Proposed work triage flow">
-<div class="triage-step"><small>01</small><strong>Recognize</strong><span>Surface an issue, not a vague case status.</span></div>
-<div class="triage-step"><small>02</small><strong>Prioritize</strong><span>Show evidence and an explainable suggestion.</span></div>
-<div class="triage-step"><small>03</small><strong>Act</strong><span>Record the next step within the user's authority.</span></div>
-<div class="triage-step"><small>04</small><strong>Track</strong><span>Make the response visible without a second status report.</span></div>
+<div class="section-label">04 · The Key Product Decision</div>
+<h2>I chose a complete response workflow over another list of alerts.</h2>
+<p>I considered starting with an exception list showing which cases might need attention. That could reduce the time spent searching, but it would still leave case managers sorting through alerts and deciding what to do next. Instead, I focused the MVP on a small, connected sequence:</p>
+<div class="triage-flow" aria-label="Work triage decision workflow">
+<div class="triage-step"><small>01</small><strong>Recognize</strong><span>Surface a specific need, not a vague case status.</span></div>
+<div class="triage-step"><small>02</small><strong>Prioritize</strong><span>Show the evidence behind the suggested order.</span></div>
+<div class="triage-step"><small>03</small><strong>Act</strong><span>Record a next step within the user's authority.</span></div>
+<div class="triage-step"><small>04</small><strong>Track</strong><span>Make the response visible without a second report.</span></div>
 </div>
-<p><strong>My MVP boundary:</strong> one case manager's decision journey, a small set of meaningful actions and an Operations view drawing on those same records. No replacement case-management system, automated legal decisions or production integrations.</p>
+<p><strong>The MVP boundary:</strong> one case manager's decision workflow, a few meaningful actions and an Operations view based on the same activity. I deliberately left out real integrations, automated legal decisions and the broader case-management platform.</p>
 </section>
 <section class="triage-section section-shell" id="demo">
-<div class="section-label">03 · Make the decisions testable</div>
-<h2>Build only enough to examine the riskiest handoffs.</h2>
-<p>The browser demo contains six fictional client cases and seven separately tracked attention needs. The case manager is Alex Rivera, supported by attorney Taylor Bennett and paralegal Jamie Torres. The clock is fixed so the scenarios are predictable.</p>
+<div class="section-label">05 · What I Built</div>
+<h2>The working prototype made priorities, responsibility and follow-through visible.</h2>
+<p>I used six fictional client cases and seven separate attention needs to demonstrate how the workflow behaves. Alex Rivera is the case manager, Taylor Bennett the attorney and Jamie Torres the paralegal. A fixed demo clock keeps the examples consistent.</p>
 <div class="triage-examples">
-<article><h3>One case, two different needs</h3><p>Avery has a callback commitment that needs attention and a separate document dependency that is appropriately waiting. The two must not be treated as one case-level status.</p></article>
-<article><h3>Clear the blockage, not the work</h3><p>Casey's document has arrived but still appears missing. Confirming receipt fixes that fact without pretending Jamie completed the document review.</p></article>
-<article><h3>Request isn't acceptance</h3><p>Devon's attorney review can be requested and tracked. The prototype does not claim the attorney accepted or completed it.</p></article>
+<article><h3>One case, two different needs</h3><p>Avery has a callback commitment requiring attention and a separate document dependency that's appropriately waiting. Neither should overwrite the other.</p></article>
+<article><h3>Correct a fact, not the whole task</h3><p>Casey's document has arrived, but the receipt checklist hasn't caught up. Confirming receipt clears that discrepancy without completing Jamie's review.</p></article>
+<article><h3>Request isn't acceptance</h3><p>Devon's attorney review can be requested and tracked, but the request stays pending. The prototype doesn't pretend the attorney has accepted or finished the work.</p></article>
 </div>
 <div class="triage-demo-panel">
-<h3>Take the three-minute tour</h3>
-<p>Open the Work view, compare the issues needing attention, confirm Casey's receipt, request Devon's attorney review, then open Operations. Try correcting a signal or recording a future wait. Reset returns the demo to the starting state.</p>
+<h3>Try the working prototype</h3>
+<p>Start in Work to compare the issues needing attention. Confirm Casey's document receipt, request Devon's attorney review, then open Operations to see how the recorded actions appear. You can also record a wait, correct a signal and reset the demo.</p>
 <a class="triage-action" href="https://tanyademauriac-pm.github.io/legal-work-triage-demo/" target="_blank" rel="noopener noreferrer">Open the interactive prototype ↗</a>
-<p class="triage-fine" style="margin:18px 0 0">All actions are simulated. Changes reset when you refresh. No emails, calls, messages or case-system updates are sent.</p>
+<p class="triage-fine" style="margin:18px 0 0">The demo uses fictional records and simulated actions. A refresh or Reset restores its starting state.</p>
 </div>
 </section>
 <section class="triage-section section-shell" id="learning">
-<div class="section-label">04 · Let the prototype sharpen the product decisions</div>
-<h2>Small interactions reveal big product decisions.</h2>
-<p>A clickable workflow forced decisions that a high-level roadmap or mockup could easily leave unresolved. One especially important correction: a generic "incorrect signal" action must not silently dismiss a confirmed outstanding callback, even after the user records a future follow-up. The interaction and underlying logic were adjusted to protect that commitment.</p>
-<ul class="triage-rules">
-<li><strong>Separate attention needs from cases.</strong> One waiting dependency doesn't erase another issue that requires action.</li>
-<li><strong>Keep responsibility honest.</strong> Requesting attorney work doesn't mean the attorney has accepted it. The case manager still needs a follow-up.</li>
-<li><strong>Make the priority understandable.</strong> A promise due today can outrank a higher-value case that is appropriately waiting.</li>
-<li><strong>Do not confuse a correction with completion.</strong> Recording an inaccurate signal isn't the same as doing the substantive work.</li>
-<li><strong>Share one record of the response.</strong> The Operations view reflects the same activity rather than relying on a parallel reporting process.</li>
-</ul>
-<p>I shaped the problem, scenarios, UX decisions, state boundaries and test expectations, using AI coding assistance to accelerate implementation. The prototype passed <strong>30 automated functional tests</strong> and underwent targeted browser checks. Those checks establish that the scripted interactions behaved as intended; they do not establish whether the product improves real-world operations.</p>
+<div class="section-label">06 · What Testing Revealed</div>
+<h2>A simple correction could have hidden a callback that was still owed.</h2>
+<p>Testing exposed an important flaw in the first interaction model. A general-purpose “correct signal” action could dismiss an outstanding callback commitment, even though the callback had not happened. I changed the UI and underlying logic so recording a future follow-up doesn't make that confirmed commitment disappear from the work needing attention.</p>
+<p>Other decisions became more concrete, too. Confirming receipt should not mark a paralegal's review complete. Requesting an attorney's help should not imply acceptance. And Operations should reflect what the case manager recorded, rather than ask the team to update a separate report.</p>
+<p>The prototype passed <strong>30 automated functional tests</strong> and was checked in a browser. Those tests helped verify the modeled workflows, including the commitment safeguard. They also gave me a more specific set of questions to take into real-user validation.</p>
 </section>
 <section class="triage-section section-shell" id="next">
-<div class="section-label">05 · Gather evidence before the larger investment</div>
-<h2>Validate the value with real users before expanding the build.</h2>
+<div class="section-label">07 · The Next Investment Decision</div>
+<h2>I'd validate the workflow with case managers before funding production integrations.</h2>
+<p>A working demo can test interactions, but the next question is whether the approach improves actual decisions. I'd use a small pilot to examine two outcomes:</p>
 <div class="triage-grid">
-<article class="triage-panel"><h3>Decision speed and quality</h3><p>Observe case managers reviewing comparable situations today, then measure how efficiently they reach an <em>appropriate</em> next step with the prototype. Check the quality of those decisions, not just the time spent.</p></article>
-<article class="triage-panel"><h3>Important work handled on time</h3><p>Measure whether actual intervention needs receive the necessary response within an agreed window. Review unflagged cases for misses, and distinguish a request from acceptance or completed work.</p></article>
+<article class="triage-panel"><h3>Faster, better work decisions</h3><p>Can case managers identify the right issue, understand it and choose an appropriate response more efficiently than they do today? I'd compare similar scenarios and check decision quality alongside time.</p></article>
+<article class="triage-panel"><h3>Important work handled on time</h3><p>Do needs requiring intervention get the appropriate action within an agreed timeframe? I'd audit both surfaced and missed issues, and distinguish a request from accepted or completed work.</p></article>
 </div>
-<p>I would also check record reliability, authority rules, false alerts and behavior at a realistic caseload. Only then would I plan durable records, permissions, audit history, case-system updates and automated follow-up with engineering. If the pilot showed that policy or team capacity—not discovery—is the dominant problem, I'd change direction rather than add features.</p>
+<p>I'd also check the reliability of underlying records, permission boundaries, false alerts and performance across a realistic caseload. Those findings would guide the engineering plan for persistence, case-system connections, audit history and follow-up. If the larger problem turned out to be staffing capacity or operating rules, I'd change the investment recommendation rather than build more software.</p>
 </section>
 <section class="section-shell triage-ending">
-<h2>Prototype to learn. Invest when the evidence supports it.</h2>
-<p>This prototype deliberately does less than a full product. Its value is making the workflow concrete enough to challenge assumptions, identify risky handoffs and decide where production engineering would actually help.</p>
+<div class="section-label">Closing Perspective</div>
+<h2>A prototype earns its value by improving the product decision.</h2>
+<p>I use rapid prototyping to make ideas tangible, expose risky assumptions and decide where engineering effort will make a difference. This example shows how a small working workflow can answer important questions before the team takes on a much larger build.</p>
 <div class="triage-action-row"><a class="triage-action" href="https://tanyademauriac-pm.github.io/legal-work-triage-demo/" target="_blank" rel="noopener noreferrer">Explore the live prototype ↗</a><a class="triage-action secondary" href="../">Back to all case studies ↑</a></div>
 </section>
 <footer><div><strong>Tanya deMauriac</strong><span>Senior Product Manager · Enterprise SaaS · AI Products</span></div><div class="footer-meta"><a href="../">Product Portfolio</a><span>Independent prototype · 2026</span></div></footer>
